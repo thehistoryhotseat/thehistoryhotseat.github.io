@@ -81,6 +81,7 @@ a.row:hover{background:var(--hover)}
 .move.done .box{background:var(--move);border-color:var(--move)}
 .move.done .box::after{opacity:1}
 .move.done .move-text{color:var(--dim);text-decoration:line-through}
+.moves li.gone{display:none}
 .move .meta{margin-left:auto;font:400 13px/18px var(--body);color:var(--move);white-space:nowrap}
 
 footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:400 13px/18px var(--body)}
@@ -109,9 +110,9 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:4
     <p class="note">Open items that need Aryeh. Check them off as you go - Instinct confirms separately.</p>
     <ul class="moves">
       <li><label class="move"><input type="checkbox" data-move="optouts"><span class="box" aria-hidden="true"></span><span class="move-text">Privacy opt-outs: 7 data brokers on your phone, ~15 min. Details on request.</span></label></li>
-      <li><div class="move done"><span class="box" aria-hidden="true"></span><span class="move-text">Apollo: set a direct password (vault link).</span><span class="meta">Done 9:19 AM</span></div></li>
       <li><label class="move"><input type="checkbox" data-move="maps"><span class="box" aria-hidden="true"></span><span class="move-text">Maps: delete your timeline on your phone.</span></label></li>
     </ul>
+    <p class="note" id="moves-clear" hidden style="margin:0">All clear - nothing waiting on you.</p>
   </section>
 
   <section aria-labelledby="h-today">
@@ -184,13 +185,26 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:4
   var state={};
   try{state=JSON.parse(localStorage.getItem(KEY)||'{}');}catch(e){}
   var boxes=document.querySelectorAll('.move input[type=checkbox]');
+  var clear=document.getElementById('moves-clear');
+  function refresh(){
+    var visible=0;
+    for(var i=0;i<boxes.length;i++){
+      if(!boxes[i].closest('li').classList.contains('gone'))visible++;
+    }
+    if(clear)clear.hidden=visible>0;
+  }
   for(var i=0;i<boxes.length;i++){ (function(cb){
-    cb.checked=!!state[cb.getAttribute('data-move')];
+    var id=cb.getAttribute('data-move');
+    if(state[id]){cb.checked=true;cb.closest('li').classList.add('gone');}
     cb.addEventListener('change',function(){
-      state[cb.getAttribute('data-move')]=cb.checked;
+      state[id]=cb.checked;
+      if(cb.checked)cb.closest('li').classList.add('gone');
+      else cb.closest('li').classList.remove('gone');
       try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}
+      refresh();
     });
   })(boxes[i]); }
+  refresh();
 })();
 </script>
 </body></html>

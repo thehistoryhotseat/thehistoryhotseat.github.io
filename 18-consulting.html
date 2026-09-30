@@ -1,4 +1,5 @@
 <!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>18 AI Consulting - Mission Control</title>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Instinct Mission Control</title><style>/* Layout: a monitor strip under the header, three venture "vitals" cards (stack on phones, 3-up wide), then memory strand and standing ops. Deliberately dark, single theme, flat surfaces, no gradients. */
 :root{
   --bg:#0a0d12; --panel:#10151d; --line:#1d2531; --line-2:#2a3442;
@@ -53,8 +54,6 @@ dl{margin:0;display:grid;grid-template-columns:56px 1fr;gap:6px 10px;font-size:1
 dt{font:600 10.5px/1.9 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
 dd{margin:0;color:var(--muted);min-width:0}
 dd.empty{color:var(--dim);font-style:italic}
-.proj-link{font:600 12px/1 var(--mono);color:var(--start);text-decoration:none;letter-spacing:.06em}
-.proj-link:hover{text-decoration:underline}
 
 /* Memory strand */
 .lower{display:grid;grid-template-columns:1fr;gap:32px}
@@ -91,82 +90,91 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:5
 @keyframes idle{0%,100%{opacity:.35}50%{opacity:1}}
 @keyframes recall{0%{box-shadow:0 0 0 0 rgba(240,169,59,.6);border-color:var(--signal)}100%{box-shadow:0 0 0 9px rgba(240,169,59,0)}}
 @media (prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important}}
+/* Project page: pipeline tracker */
+.back{font:600 12px/1 var(--mono);color:var(--start);text-decoration:none;letter-spacing:.06em}
+.back:hover{text-decoration:underline}
+.stages{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.stage{font:600 10px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim);border:1px solid var(--line);border-radius:99px;padding:6px 10px}
+.stage.now{color:var(--start);border-color:var(--line-2)}
+.pipe{display:grid;grid-template-columns:1fr;gap:12px}
+@media (min-width:860px){.pipe{grid-template-columns:1fr 1fr}}
+.co{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0;transition:border-color .25s}
+.co[data-mode="park"]{--c:var(--park)}.co[data-mode="start"]{--c:var(--start)}.co[data-mode="move"]{--c:var(--move)}
+.co:hover,.co:focus-within{border-color:var(--c)}
+.co h3{font:700 18px/1.2 var(--display);letter-spacing:-.01em;margin:0}
+.done{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+@media (min-width:520px){.done{grid-template-columns:1fr 1fr}}
+.done li{display:flex;align-items:center;gap:12px;padding:12px 14px;border-top:1px solid var(--line);background:var(--panel)}
+.done li:first-child{border-top:0}
+@media (min-width:520px){.done li:nth-child(2){border-top:0}.done li:nth-child(odd){border-right:1px solid var(--line)}}
+.done-dot{width:6px;height:6px;border-radius:50%;background:var(--move);flex:none}
+.done-name{font-weight:500}
+.done-kind{margin-left:auto;font:600 10px/1 var(--mono);letter-spacing:.14em;color:var(--move)}
 </style></head><body>
+</head><body>
 <div class="wrap">
   <header>
     <div class="head-row">
       <div>
         <div class="label who"><span class="heart"></span>Instinct</div>
-        <h1>Mission Control <span>for Aryeh</span></h1>
+        <h1>18 AI Consulting <span>project page</span></h1>
+        <p style="margin:8px 0 0"><a class="back" href="index.html">&larr; Mission Control</a></p>
       </div>
-      <div class="clock"><b id="time">5:52 PM</b><span id="date">Tue, Sep 29</span></div>
+      <div class="clock"><b id="time">--:--</b><span id="date">--</span></div>
     </div>
     <div class="monitor" aria-hidden="true">
       <canvas id="main-trace" width="507" height="70"></canvas>
-      <span class="readout">3 VENTURES · 5 MEMORIES · 7 STANDING OPS</span>
+      <span class="readout">6 BUILD ITEMS &middot; 6 TARGETS &middot; 0 CONTACTED</span>
     </div>
   </header>
 
-  <section aria-labelledby="h-ventures">
-    <h2 id="h-ventures" class="label">Venture priorities</h2>
-    <div class="ventures">
-      <article class="vital" data-mode="start" tabindex="0">
-        <div class="vital-top"><span class="rank">P1</span><span class="badge"><i></i>STARTING UP</span></div>
-        <div><h3>AI Consulting Agency</h3><div class="tag">The cash game.</div></div>
-        <div class="trace" aria-hidden="true"><canvas width="473" height="44"></canvas></div>
-        <p class="status">Starting up. The name is locked: 18 AI Consulting.</p>
-        <dl><dt>Today</dt><dd>Named: 18 AI Consulting. Business plan done.</dd><dt>Next</dt><dd>Email + first outreach.</dd></dl>
-        <p style="margin:0"><a class="proj-link" href="18-consulting.html">Open project page &rarr;</a></p>
-      </article>
+  <section aria-labelledby="h-build">
+    <h2 id="h-build" class="label">Build status</h2>
+    <ul class="done">
+      <li style="--i:0"><span class="done-dot"></span><span class="done-name">Business plan</span><span class="done-kind">DONE</span></li>
+      <li style="--i:1"><span class="done-dot"></span><span class="done-name">Gmail</span><span class="done-kind">LIVE</span></li>
+      <li style="--i:2"><span class="done-dot"></span><span class="done-name">Logo</span><span class="done-kind">LOCKED</span></li>
+      <li style="--i:3"><span class="done-dot"></span><span class="done-name">Signature</span><span class="done-kind">LIVE</span></li>
+      <li style="--i:4"><span class="done-dot"></span><span class="done-name">Questionnaire</span><span class="done-kind">LIVE</span></li>
+      <li style="--i:5"><span class="done-dot"></span><span class="done-name">Deck</span><span class="done-kind">DONE</span></li>
+    </ul>
+  </section>
 
-      <article class="vital" data-mode="move" tabindex="0">
-        <div class="vital-top"><span class="rank">P2</span><span class="badge"><i></i>MOVING</span></div>
-        <div><h3>The History Hot Seat</h3><div class="tag">The brand build.</div></div>
-        <div class="trace" aria-hidden="true"><canvas width="473" height="44"></canvas></div>
-        <p class="status">Moving. Episode 1 is written.</p>
-        <dl><dt>Today</dt><dd>Franklin script done. 7 minutes, every claim sourced.</dd><dt>Next</dt><dd class="empty">Not logged yet.</dd></dl>
+  <section aria-labelledby="h-pipe">
+    <h2 id="h-pipe" class="label">Outreach pipeline</h2>
+    <div class="stages" aria-label="Pipeline stages">
+      <span class="stage now">Listed</span><span class="stage">Contacted</span><span class="stage">Replied</span><span class="stage">Call</span><span class="stage">Pilot</span><span class="stage">Customer</span>
+    </div>
+    <div class="pipe">
+      <article class="co" data-mode="park" tabindex="0">
+        <div class="vital-top"><h3>Climate Control Systems</h3><span class="badge"><i></i>LISTED</span></div>
+        <dl><dt>Contact</dt><dd class="empty">Not yet.</dd><dt>Email</dt><dd class="empty">Not yet.</dd><dt>Contacted</dt><dd class="empty">Not yet.</dd><dt>Follow-up</dt><dd class="empty">Not set.</dd></dl>
       </article>
-
-      <article class="vital" data-mode="park" tabindex="0">
-        <div class="vital-top"><span class="rank">P3</span><span class="badge"><i></i>PARKED</span></div>
-        <div><h3>Finance Channel</h3><div class="tag">Waits for the hot seat pipeline.</div></div>
-        <div class="trace" aria-hidden="true"><canvas width="473" height="44"></canvas></div>
-        <p class="status">Parked on purpose.</p>
-        <dl><dt>Today</dt><dd>Parked.</dd><dt>Next</dt><dd>Restarts once the hot seat pipeline runs.</dd></dl>
+      <article class="co" data-mode="park" tabindex="0">
+        <div class="vital-top"><h3>Clarkstown HVAC</h3><span class="badge"><i></i>LISTED</span></div>
+        <dl><dt>Contact</dt><dd class="empty">Not yet.</dd><dt>Email</dt><dd class="empty">Not yet.</dd><dt>Contacted</dt><dd class="empty">Not yet.</dd><dt>Follow-up</dt><dd class="empty">Not set.</dd></dl>
+      </article>
+      <article class="co" data-mode="park" tabindex="0">
+        <div class="vital-top"><h3>Mountain Mechanical</h3><span class="badge"><i></i>LISTED</span></div>
+        <dl><dt>Contact</dt><dd class="empty">Not yet.</dd><dt>Email</dt><dd class="empty">Not yet.</dd><dt>Contacted</dt><dd class="empty">Not yet.</dd><dt>Follow-up</dt><dd class="empty">Not set.</dd></dl>
+      </article>
+      <article class="co" data-mode="park" tabindex="0">
+        <div class="vital-top"><h3>Atzl Air</h3><span class="badge"><i></i>LISTED</span></div>
+        <dl><dt>Contact</dt><dd class="empty">Not yet.</dd><dt>Email</dt><dd class="empty">Not yet.</dd><dt>Contacted</dt><dd class="empty">Not yet.</dd><dt>Follow-up</dt><dd class="empty">Not set.</dd></dl>
+      </article>
+      <article class="co" data-mode="park" tabindex="0">
+        <div class="vital-top"><h3>DB Heating &amp; Cooling</h3><span class="badge"><i></i>LISTED</span></div>
+        <dl><dt>Contact</dt><dd class="empty">Not yet.</dd><dt>Email</dt><dd class="empty">Not yet.</dd><dt>Contacted</dt><dd class="empty">Not yet.</dd><dt>Follow-up</dt><dd class="empty">Not set.</dd></dl>
+      </article>
+      <article class="co" data-mode="park" tabindex="0">
+        <div class="vital-top"><h3>GRC Mechanical</h3><span class="badge"><i></i>LISTED</span></div>
+        <dl><dt>Contact</dt><dd class="empty">Not yet.</dd><dt>Email</dt><dd class="empty">Not yet.</dd><dt>Contacted</dt><dd class="empty">Not yet.</dd><dt>Follow-up</dt><dd class="empty">Not set.</dd></dl>
       </article>
     </div>
   </section>
 
-  <div class="lower">
-    <section aria-labelledby="h-mem">
-      <h2 id="h-mem" class="label">Memory</h2>
-      <div class="day"><b>SEP 29</b><span>5 entries</span></div>
-      <ul class="strand">
-        <li class="mem recall" tabindex="0"><p>Channel idea greenlit over voice notes.</p></li>
-        <li class="mem recall" tabindex="0"><p>3D Franklin won the look-off. Cartoon and photoreal lost on points.</p></li>
-        <li class="mem recall" tabindex="0"><p>Episode 1 script done: Franklin, 7 minutes, every claim sourced.</p></li>
-        <li class="mem recall" tabindex="0"><p>Consulting agency named: 18 AI Consulting. Business plan done.</p></li>
-        <li class="mem recall" tabindex="0"><p>Mission Control born.</p></li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="h-ops">
-      <h2 id="h-ops" class="label">Standing ops</h2>
-      <ul class="ops">
-        <li style="--i:0"><span class="op-dot"></span><span class="op-name">Trading desk</span><span class="op-kind">STANDING</span></li>
-        <li style="--i:1"><span class="op-dot"></span><span class="op-name">LinkedIn daily</span><span class="op-kind">STANDING</span></li>
-        <li style="--i:2"><span class="op-dot"></span><span class="op-name">Lead sweep</span><span class="op-kind">STANDING</span></li>
-        <li style="--i:3"><span class="op-dot"></span><span class="op-name">Rate sheet</span><span class="op-kind">STANDING</span></li>
-        <li style="--i:4"><span class="op-dot"></span><span class="op-name">Amazon refunds</span><span class="op-kind">STANDING</span></li>
-        <li style="--i:5"><span class="op-dot"></span><span class="op-name">Promo watchdog</span><span class="op-kind">STANDING</span></li>
-        <li style="--i:6"><span class="op-dot"></span><span class="op-name">Preapproval nudges</span><span class="op-kind">STANDING</span></li>
-      </ul>
-    </section>
-  </div>
-
-  <footer>Read-only view. Nothing on this page sends commands.</footer>
+  <footer>Read-only view. Updates land here as outreach moves.</footer>
 </div>
-
 <script>
 (function(){
   var css=getComputedStyle(document.documentElement);
@@ -278,5 +286,4 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:5
   tick();setInterval(tick,30000);
 })();
 </script>
-
 </body></html>

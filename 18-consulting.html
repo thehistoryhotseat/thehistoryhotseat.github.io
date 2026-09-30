@@ -101,6 +101,16 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:5
 .co{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0;transition:border-color .25s}
 .co[data-mode="park"]{--c:var(--park)}.co[data-mode="start"]{--c:var(--start)}.co[data-mode="move"]{--c:var(--move)}
 .co:hover,.co:focus-within{border-color:var(--c)}
+.deliv{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.deliv li{border-top:1px solid var(--line);background:var(--panel)}
+.deliv li:first-child{border-top:0}
+.deliv a,.deliv .slot{display:flex;align-items:center;gap:12px;padding:12px 14px;text-decoration:none;color:var(--fg)}
+.deliv a:hover{background:var(--line)}
+.deliv-dot{width:6px;height:6px;border-radius:50%;background:var(--move);flex:none}
+.deliv-dot.soon{background:var(--dim)}
+.deliv-name{font-weight:500}
+.deliv-kind{margin-left:auto;font:600 10px/1 var(--mono);letter-spacing:.14em;color:var(--start);white-space:nowrap}
+.deliv-kind.soon{color:var(--dim)}
 .pipe dl{grid-template-columns:88px 1fr}
 .co h3{font:700 18px/1.2 var(--display);letter-spacing:-.01em;margin:0}
 .done{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;border:1px solid var(--line);border-radius:10px;overflow:hidden}
@@ -124,7 +134,7 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:5
     </div>
     <div class="monitor" aria-hidden="true">
       <canvas id="main-trace" width="507" height="70"></canvas>
-      <span class="readout">6 BUILD ITEMS &middot; 6 TARGETS &middot; 0 CONTACTED</span>
+      <span class="readout">3 DOCS LIVE &middot; 6 TARGETS &middot; 0 CONTACTED</span>
     </div>
   </header>
 
@@ -137,6 +147,18 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:5
       <li style="--i:3"><span class="done-dot"></span><span class="done-name">Signature</span><span class="done-kind">LIVE</span></li>
       <li style="--i:4"><span class="done-dot"></span><span class="done-name">Questionnaire</span><span class="done-kind">LIVE</span></li>
       <li style="--i:5"><span class="done-dot"></span><span class="done-name">Deck</span><span class="done-kind">DONE</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="h-deliv">
+    <h2 id="h-deliv" class="label">Deliverables</h2>
+    <ul class="deliv">
+      <li><a href="https://files.instinct.com/file-01M3QWP0JPR7BNH62TQC817SG9"><span class="deliv-dot"></span><span class="deliv-name">Business plan</span><span class="deliv-kind">OPEN &rarr;</span></a></li>
+      <li><a href="https://files.instinct.com/file-01M3QY6X3X3DAVGWJA222N6N3W"><span class="deliv-dot"></span><span class="deliv-name">HVAC field guide</span><span class="deliv-kind">OPEN &rarr;</span></a></li>
+      <li><a href="https://files.instinct.com/file-01M3QYNWAPNQAPXMS9XJF4MA81"><span class="deliv-dot"></span><span class="deliv-name">Market + competitor scan</span><span class="deliv-kind">OPEN &rarr;</span></a></li>
+      <li><span class="slot"><span class="deliv-dot soon"></span><span class="deliv-name">Partner deck (PDF)</span><span class="deliv-kind soon">HOSTING PENDING</span></span></li>
+      <li><span class="slot"><span class="deliv-dot soon"></span><span class="deliv-name">Questionnaire</span><span class="deliv-kind soon">LINK COMING</span></span></li>
+      <li><span class="slot"><span class="deliv-dot soon"></span><span class="deliv-name">Response sheet</span><span class="deliv-kind soon">LINK COMING</span></span></li>
     </ul>
   </section>
 

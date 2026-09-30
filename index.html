@@ -77,6 +77,12 @@ a.row:hover{background:var(--hover)}
 .move input:focus-visible ~ .box{outline:2px solid var(--signal);outline-offset:2px}
 .move-text{color:var(--fg);font-size:15px;line-height:22px;transition:color .14s ease-out}
 .move input:checked ~ .move-text{color:var(--dim);text-decoration:line-through}
+.move.done{cursor:default}
+.move.done .box{background:var(--move);border-color:var(--move)}
+.move.done .box::after{opacity:1}
+.move.done .move-text{color:var(--dim);text-decoration:line-through}
+.move .meta{margin-left:auto;font:400 13px/18px var(--body);color:var(--move);white-space:nowrap}
+
 footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:400 13px/18px var(--body)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style></head><body>
@@ -103,7 +109,7 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:4
     <p class="note">Open items that need Aryeh. Check them off as you go - Instinct confirms separately.</p>
     <ul class="moves">
       <li><label class="move"><input type="checkbox" data-move="optouts"><span class="box" aria-hidden="true"></span><span class="move-text">Privacy opt-outs: 7 data brokers on your phone, ~15 min. Details on request.</span></label></li>
-      <li><label class="move"><input type="checkbox" data-move="apollo"><span class="box" aria-hidden="true"></span><span class="move-text">Apollo: set a direct password (vault link).</span></label></li>
+      <li><div class="move done"><span class="box" aria-hidden="true"></span><span class="move-text">Apollo: set a direct password (vault link).</span><span class="meta">Done 9:19 AM</span></div></li>
       <li><label class="move"><input type="checkbox" data-move="maps"><span class="box" aria-hidden="true"></span><span class="move-text">Maps: delete your timeline on your phone.</span></label></li>
     </ul>
   </section>

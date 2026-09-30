@@ -55,7 +55,7 @@ dt{font:600 10.5px/1.9 var(--mono);letter-spacing:.12em;text-transform:uppercase
 dd{margin:0;color:var(--muted);min-width:0}
 dd.empty{color:var(--dim);font-style:italic}
 .tabs{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.tab{font:600 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:99px;padding:9px 14px;white-space:nowrap}
+.tab{font:600 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:99px;padding:12px 16px;white-space:nowrap}
 .tab:hover{border-color:var(--line-2);color:var(--fg)}
 .tab.on{color:var(--signal);border-color:var(--signal);background:rgba(240,169,59,.08)}
 .tab.off{color:var(--dim);border-style:dashed;cursor:default}
@@ -105,13 +105,13 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:5
 .stage.now{color:var(--start);border-color:var(--line-2)}
 .pipe{display:grid;grid-template-columns:1fr;gap:12px}
 @media (min-width:860px){.pipe{grid-template-columns:1fr 1fr}}
-.co{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0;transition:border-color .25s}
+.co{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:12px;min-width:0;transition:border-color .25s}
 .co[data-mode="park"]{--c:var(--park)}.co[data-mode="start"]{--c:var(--start)}.co[data-mode="move"]{--c:var(--move)}
 .co:hover,.co:focus-within{border-color:var(--c)}
 .deliv{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .deliv li{border-top:1px solid var(--line);background:var(--panel)}
 .deliv li:first-child{border-top:0}
-.deliv a,.deliv .slot{display:flex;align-items:center;gap:12px;padding:12px 14px;text-decoration:none;color:var(--fg)}
+.deliv a,.deliv .slot{display:flex;align-items:center;gap:12px;padding:14px 16px;text-decoration:none;color:var(--fg)}
 .deliv a:hover{background:var(--line)}
 .deliv-dot{width:6px;height:6px;border-radius:50%;background:var(--move);flex:none}
 .deliv-dot.soon{background:var(--dim)}
@@ -122,7 +122,7 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:5
 .co h3{font:700 18px/1.2 var(--display);letter-spacing:-.01em;margin:0}
 .done{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;border:1px solid var(--line);border-radius:10px;overflow:hidden}
 @media (min-width:520px){.done{grid-template-columns:1fr 1fr}}
-.done li{display:flex;align-items:center;gap:12px;padding:12px 14px;border-top:1px solid var(--line);background:var(--panel)}
+.done li{display:flex;align-items:center;gap:12px;padding:14px 16px;border-top:1px solid var(--line);background:var(--panel)}
 .done li:first-child{border-top:0}
 @media (min-width:520px){.done li:nth-child(2){border-top:0}.done li:nth-child(odd){border-right:1px solid var(--line)}}
 .done-dot{width:6px;height:6px;border-radius:50%;background:var(--move);flex:none}
@@ -140,7 +140,7 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:5
     <div class="head-row">
       <div>
         <div class="label who"><span class="heart"></span>Instinct</div>
-        <h1>18 AI Consulting <span>project page</span></h1>
+        <h1>18 AI Consulting <span>the cash game</span></h1>
       </div>
       <div class="clock"><b id="time">--:--</b><span id="date">--</span></div>
     </div>

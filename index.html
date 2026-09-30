@@ -35,7 +35,7 @@ h2::after{content:"";flex:1;height:1px;background:var(--line)}
 /* Venture vitals */
 .ventures{display:grid;grid-template-columns:1fr;gap:12px}
 @media (min-width:860px){.ventures{grid-template-columns:repeat(3,1fr)}}
-.vital{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0;cursor:default;transition:border-color .25s}
+.vital{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:12px;min-width:0;cursor:default;transition:border-color .25s}
 .vital[data-mode="start"]{--c:var(--start)} .vital[data-mode="move"]{--c:var(--move)} .vital[data-mode="park"]{--c:var(--park)}
 .vital:hover,.vital:focus-within,.vital.hot{border-color:var(--c)}
 .vital-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
@@ -54,13 +54,13 @@ dt{font:600 10.5px/1.9 var(--mono);letter-spacing:.12em;text-transform:uppercase
 dd{margin:0;color:var(--muted);min-width:0}
 dd.empty{color:var(--dim);font-style:italic}
 .tabs{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.tab{font:600 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:99px;padding:9px 14px;white-space:nowrap}
+.tab{font:600 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:99px;padding:12px 16px;white-space:nowrap}
 .tab:hover{border-color:var(--line-2);color:var(--fg)}
 .tab.on{color:var(--signal);border-color:var(--signal);background:rgba(240,169,59,.08)}
 .tab.off{color:var(--dim);border-style:dashed;cursor:default}
 .tab.off b{font-size:9px;margin-left:6px;letter-spacing:.1em;color:var(--dim)}
 
-.proj-link{font:600 12px/1 var(--mono);color:var(--start);text-decoration:none;letter-spacing:.06em}
+.proj-link{font:600 12px/1 var(--mono);display:inline-block;padding:10px 0;color:var(--start);text-decoration:none;letter-spacing:.06em}
 .proj-link:hover{text-decoration:underline}
 
 /* Memory strand */
@@ -84,7 +84,7 @@ dd.empty{color:var(--dim);font-style:italic}
 /* Standing ops */
 .ops{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;border:1px solid var(--line);border-radius:10px;overflow:hidden}
 @media (min-width:520px) and (max-width:859px){.ops{grid-template-columns:1fr 1fr}}
-.ops li{display:flex;align-items:center;gap:12px;padding:12px 14px;border-top:1px solid var(--line);background:var(--panel)}
+.ops li{display:flex;align-items:center;gap:12px;padding:14px 16px;border-top:1px solid var(--line);background:var(--panel)}
 .ops li:first-child{border-top:0}
 @media (min-width:520px) and (max-width:859px){.ops li:nth-child(2){border-top:0}.ops li:nth-child(odd){border-right:1px solid var(--line)}}
 .op-dot{width:6px;height:6px;border-radius:50%;background:var(--move);flex:none;animation:idle 3.2s infinite;animation-delay:calc(var(--i) * -.45s)}
@@ -127,8 +127,8 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:5
         <div class="vital-top"><span class="rank">P1</span><span class="badge"><i></i>STARTING UP</span></div>
         <div><h3>AI Consulting Agency</h3><div class="tag">The cash game.</div></div>
         <div class="trace" aria-hidden="true"><canvas width="473" height="44"></canvas></div>
-        <p class="status">Starting up. The name is locked: 18 AI Consulting.</p>
-        <dl><dt>Today</dt><dd>Named: 18 AI Consulting. Business plan done.</dd><dt>Next</dt><dd>Email + first outreach.</dd></dl>
+        <p class="status">Starting up.</p>
+        <dl><dt>Today</dt><dd>Named 18 AI Consulting. Plan done.</dd><dt>Next</dt><dd>Email and first outreach.</dd></dl>
         <p style="margin:0"><a class="proj-link" href="18-consulting.html">Open project page &rarr;</a></p>
       </article>
 
@@ -136,8 +136,8 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:5
         <div class="vital-top"><span class="rank">P2</span><span class="badge"><i></i>MOVING</span></div>
         <div><h3>The History Hot Seat</h3><div class="tag">The brand build.</div></div>
         <div class="trace" aria-hidden="true"><canvas width="473" height="44"></canvas></div>
-        <p class="status">Moving. Episode 1 is written.</p>
-        <dl><dt>Today</dt><dd>Franklin script done. 7 minutes, every claim sourced.</dd><dt>Next</dt><dd class="empty">Not logged yet.</dd></dl>
+        <p class="status">Moving.</p>
+        <dl><dt>Today</dt><dd>Ep 1 script done: Franklin, 7 minutes, every claim sourced.</dd><dt>Next</dt><dd class="empty">Not logged yet.</dd></dl>
       </article>
 
       <article class="vital" data-mode="park" tabindex="0">
@@ -145,7 +145,7 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:5
         <div><h3>Finance Channel</h3><div class="tag">Waits for the hot seat pipeline.</div></div>
         <div class="trace" aria-hidden="true"><canvas width="473" height="44"></canvas></div>
         <p class="status">Parked on purpose.</p>
-        <dl><dt>Today</dt><dd>Parked.</dd><dt>Next</dt><dd>Restarts once the hot seat pipeline runs.</dd></dl>
+        <dl><dt>Today</dt><dd>Parked.</dd><dt>Next</dt><dd>Restarts when the Hot Seat pipeline runs.</dd></dl>
       </article>
     </div>
   </section>

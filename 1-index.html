@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0e14">
+<title>Mission Control</title>
+<style>
+  :root{
+    --bg:#0a0e14; --panel:#10161f; --panel2:#141c28; --line:#1f2b3a;
+    --ink:#e8eef5; --dim:#8a99ab; --faint:#55657377;
+    --green:#39d98a; --amber:#ffb454; --red:#ff6b6b; --blue:#5eb1ff;
+    --mono:'SF Mono',ui-monospace,Menlo,Consolas,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;line-height:1.5;padding:0 0 64px}
+  .wrap{max-width:680px;margin:0 auto;padding:0 16px}
+  header{padding:28px 0 20px;border-bottom:1px solid var(--line);margin-bottom:20px}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.25em;color:var(--green);text-transform:uppercase}
+  h1{font-size:34px;font-weight:800;letter-spacing:-.02em;margin:6px 0 4px}
+  .sub{color:var(--dim);font-size:14px}
+  .clock{font-family:var(--mono);font-size:12px;color:var(--dim);margin-top:10px}
+  .clock b{color:var(--green);font-weight:600}
+  .seclabel{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--dim);text-transform:uppercase;margin:28px 0 10px;display:flex;align-items:center;gap:8px}
+  .seclabel::after{content:"";flex:1;height:1px;background:var(--line)}
+  .card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:12px}
+  .cardhead{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+  .rank{font-family:var(--mono);font-size:11px;color:var(--faint);color:var(--dim)}
+  .card h2{font-size:19px;font-weight:750;letter-spacing:-.01em;margin:2px 0 0}
+  .badge{font-family:var(--mono);font-size:10px;letter-spacing:.12em;padding:4px 9px;border-radius:99px;white-space:nowrap;text-transform:uppercase}
+  .b-moving{color:#06281a;background:var(--green)}
+  .b-parked{color:#2b1c04;background:var(--amber)}
+  .b-waiting{color:#04182b;background:var(--blue)}
+  .b-blocked{color:#2b0404;background:var(--red)}
+  .oneline{color:var(--dim);font-size:14px;margin:8px 0 12px}
+  .rows{display:grid;gap:8px;font-size:14px}
+  .row{display:flex;gap:10px}
+  .k{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--dim);text-transform:uppercase;min-width:86px;padding-top:3px}
+  .v{flex:1}
+  .needs .v{color:var(--amber)}
+  .kill{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--red);border:1px solid #3a2226;border-radius:8px;padding:4px 10px;text-decoration:none;margin-top:12px}
+  .kill:active{background:#2a1215}
+  .feed{list-style:none}
+  .feed li{display:flex;gap:12px;padding:9px 2px;border-bottom:1px solid var(--line);font-size:14px}
+  .feed li:last-child{border-bottom:none}
+  .d{font-family:var(--mono);font-size:11px;color:var(--green);min-width:48px;padding-top:2px}
+  .ops{list-style:none}
+  .ops li{display:flex;align-items:center;gap:10px;padding:10px 2px;border-bottom:1px solid var(--line);font-size:14px}
+  .ops li:last-child{border-bottom:none}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px #39d98a66;flex:none}
+  .ops .nm{flex:1}
+  .ops .st{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--dim);text-transform:uppercase}
+  .ops .kill{margin:0;padding:2px 8px}
+  details{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+  summary{cursor:pointer;font-family:var(--mono);font-size:12px;letter-spacing:.15em;color:var(--dim);text-transform:uppercase;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"▸ ";color:var(--green)}
+  details[open] summary::before{content:"▾ "}
+  .bb{list-style:none;margin-top:10px}
+  .bb li{display:flex;align-items:baseline;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:13px}
+  .bb li:last-child{border-bottom:none}
+  .bb .nm{flex:1}
+  .bb .note{color:var(--dim);font-size:12px;display:block}
+  .bb .kill{margin:0;padding:2px 8px;font-size:9px}
+  footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);color:var(--dim);font-size:12px;font-family:var(--mono)}
+  footer b{color:var(--green);font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Aryeh Brecher · Instinct</div>
+    <h1>Mission Control</h1>
+    <div class="sub">Everything your Instinct is working on. One tap to kill any of it.</div>
+    <div class="clock">ET <b id="t">--:--</b> · board updated Tue, Sep 29, 2026</div>
+  </header>
+
+  <div class="seclabel">Priorities</div>
+
+  <div class="card">
+    <div class="cardhead">
+      <div><div class="rank">01</div><h2>AI Consulting Agency</h2></div>
+      <span class="badge b-moving">Moving</span>
+    </div>
+    <div class="oneline">Greenlit today. Cash game first.</div>
+    <div class="rows">
+      <div class="row"><div class="k">Today</div><div class="v">You gave the green light. Setup started.</div></div>
+      <div class="row"><div class="k">Next</div><div class="v">Rate sheet and lead list land here first.</div></div>
+      <div class="row needs"><div class="k">Needs you</div><div class="v">Nothing right now. Drafts come to you before anything goes out.</div></div>
+    </div>
+    <a class="kill" href="https://wa.me/16508702892?text=kill+AI+consulting+agency">kill</a>
+  </div>
+
+  <div class="card">
+    <div class="cardhead">
+      <div><div class="rank">02</div><h2>The History Hot Seat</h2></div>
+      <span class="badge b-moving">Moving</span>
+    </div>
+    <div class="oneline">Build phase. Episode one is real.</div>
+    <div class="rows">
+      <div class="row"><div class="k">Today</div><div class="v">3D Franklin locked as the show's look. Episode 1 script done: Franklin, 7 minutes, sourced. Five social accounts live.</div></div>
+      <div class="row"><div class="k">Next</div><div class="v">Produce episode 1.</div></div>
+      <div class="row needs"><div class="k">Needs you</div><div class="v">Watch the pilot when it lands. That call is yours.</div></div>
+    </div>
+    <a class="kill" href="https://wa.me/16508702892?text=kill+The+History+Hot+Seat">kill</a>
+  </div>
+
+  <div class="card">
+    <div class="cardhead">
+      <div><div class="rank">03</div><h2>Finance Channel</h2></div>
+      <span class="badge b-parked">Parked</span>
+    </div>
+    <div class="oneline">Researched, priced, parked. Not dead, just not now.</div>
+    <div class="rows">
+      <div class="row"><div class="k">Today</div><div class="v">Research filed. Nothing is running.</div></div>
+      <div class="row"><div class="k">Next</div><div class="v">Revive it when the agency and the show are standing.</div></div>
+      <div class="row needs"><div class="k">Needs you</div><div class="v">Nothing.</div></div>
+    </div>
+    <a class="kill" href="https://wa.me/16508702892?text=kill+finance+channel">kill</a>
+  </div>
+
+  <div class="seclabel">Memory</div>
+  <ul class="feed">
+    <li><span class="d">Sep 29</span><span>Mission Control is born.</span></li>
+    <li><span class="d">Sep 29</span><span>AI consulting agency greenlit.</span></li>
+    <li><span class="d">Sep 29</span><span>Finance channel researched and parked.</span></li>
+    <li><span class="d">Sep 29</span><span>Production pipeline priced: about $35-55 a month for a weekly show.</span></li>
+    <li><span class="d">Sep 29</span><span>Monetization reality check filed: this is a brand and IP business, not an ads business.</span></li>
+    <li><span class="d">Sep 29</span><span>Claude deep research filed: MFK rules and a 90-day plan.</span></li>
+    <li><span class="d">Sep 29</span><span>Episode 1 script done. Franklin, 7 minutes, sourced.</span></li>
+    <li><span class="d">Sep 29</span><span>3D Franklin locked as the show's look after a 3-way test.</span></li>
+    <li><span class="d">Sep 29</span><span>Five social accounts live.</span></li>
+    <li><span class="d">Sep 29</span><span>Channel idea greenlit.</span></li>
+  </ul>
+
+  <div class="seclabel">Standing Ops</div>
+  <ul class="ops">
+    <li><span class="dot"></span><span class="nm">Trading desk</span><span class="st">on</span><a class="kill" href="https://wa.me/16508702892?text=kill+trading+desk">kill</a></li>
+    <li><span class="dot"></span><span class="nm">LinkedIn daily</span><span class="st">on</span><a class="kill" href="https://wa.me/16508702892?text=kill+LinkedIn+daily">kill</a></li>
+    <li><span class="dot"></span><span class="nm">Lead sweep</span><span class="st">on</span><a class="kill" href="https://wa.me/16508702892?text=kill+lead+sweep">kill</a></li>
+    <li><span class="dot"></span><span class="nm">Rate sheet</span><span class="st">on</span><a class="kill" href="https://wa.me/16508702892?text=kill+rate+sheet">kill</a></li>
+    <li><span class="dot"></span><span class="nm">Amazon refunds</span><span class="st">on</span><a class="kill" href="https://wa.me/16508702892?text=kill+amazon+refunds">kill</a></li>
+    <li><span class="dot"></span><span class="nm">Promo watchdog</span><span class="st">on</span><a class="kill" href="https://wa.me/16508702892?text=kill+promo+watchdog">kill</a></li>
+    <li><span class="dot"></span><span class="nm">Preapproval nudges</span><span class="st">on</span><a class="kill" href="https://wa.me/16508702892?text=kill+preapproval+nudges">kill</a></li>
+    <li><span class="dot"></span><span class="nm">aosu watch</span><span class="st">on</span><a class="kill" href="https://wa.me/16508702892?text=kill+aosu+watch">kill</a></li>
+    <li><span class="dot"></span><span class="nm">Karpathy digest</span><span class="st">on</span><a class="kill" href="https://wa.me/16508702892?text=kill+karpathy+digest">kill</a></li>
+  </ul>
+
+  <div class="seclabel">Back Burner</div>
+  <details>
+    <summary>Older open items · 8</summary>
+    <ul class="bb">
+      <li><span class="nm">Airmont ticket<span class="note">Plea plan in motion. Court date Oct 15.</span></span><a class="kill" href="https://wa.me/16508702892?text=kill+airmont+ticket">kill</a></li>
+      <li><span class="nm">1613 East 15th house<span class="note">Numbers run. Early.</span></span><a class="kill" href="https://wa.me/16508702892?text=kill+house+purchase+1613+East+15th">kill</a></li>
+      <li><span class="nm">Anduril approach<span class="note">Intro request out. Waiting on your relocation answer.</span></span><a class="kill" href="https://wa.me/16508702892?text=kill+anduril+approach">kill</a></li>
+      <li><span class="nm">Business acquisition search<span class="note">Six listings screened. Your pick pending.</span></span><a class="kill" href="https://wa.me/16508702892?text=kill+business+acquisition+search">kill</a></li>
+      <li><span class="nm">Verizon upgrade</span><a class="kill" href="https://wa.me/16508702892?text=kill+verizon+upgrade">kill</a></li>
+      <li><span class="nm">Family tree research</span><a class="kill" href="https://wa.me/16508702892?text=kill+family+tree+research">kill</a></li>
+      <li><span class="nm">HELOC refinance</span><a class="kill" href="https://wa.me/16508702892?text=kill+heloc+refinance">kill</a></li>
+      <li><span class="nm">Cleaners POS demo</span><a class="kill" href="https://wa.me/16508702892?text=kill+cleaners+pos+demo">kill</a></li>
+    </ul>
+  </details>
+
+  <footer>
+    No login. No trackers. <b>Text Instinct to change any of this.</b><br>
+    Every kill button opens WhatsApp with the order already typed.
+  </footer>
+</div>
+<script>
+  function tick(){
+    var d=new Date();
+    document.getElementById('t').textContent=d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/New_York'});
+  }
+  tick();setInterval(tick,30000);
+</script>
+</body>
+</html>

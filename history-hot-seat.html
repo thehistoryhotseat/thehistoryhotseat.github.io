@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>History Hot Seat - Mission Control</title><style>
+:root{
+  --bg:#0A0D12; --panel:#10151D; --hover:#151C26; --line:#252E3A;
+  --fg:#E6EAF0; --muted:#A7B0BE; --dim:#778294;
+  --signal:#F0A93B;
+  --move:#46D39A; --start:#86A8FF; --park:#8792A3; --wait:#F0A93B; --block:#FF6464;
+  --display:"Avenir Next","Segoe UI Variable Display","Segoe UI",system-ui,-apple-system,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--body);margin:0;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:24px 16px 40px;display:flex;flex-direction:column;gap:24px}
+@media (min-width:760px){.wrap{padding:32px 32px 48px;gap:32px}}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px;border-radius:8px}
+
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tab{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;font:600 13px/1 var(--body);color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:8px;transition:color .14s ease-out,border-color .14s ease-out}
+.tab:hover{color:var(--fg);border-color:var(--dim)}
+.tab.on{color:var(--signal);border-color:var(--signal)}
+
+header{display:flex;flex-direction:column;gap:12px}
+.head-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:8px 24px}
+.kicker{font:600 11px/14px var(--body);letter-spacing:.06em;color:var(--signal)}
+h1{font:700 clamp(28px,5vw,32px)/1.2 var(--display);letter-spacing:-.03em;margin:6px 0 0}
+h1 span{color:var(--dim);font-weight:500}
+.updated{font:400 13px/18px var(--body);color:var(--dim);font-variant-numeric:tabular-nums;text-align:right}
+.trace{display:block;width:100%;height:26px;opacity:.4}
+
+h2{font:600 18px/24px var(--display);letter-spacing:-.01em;margin:0 0 12px;display:flex;align-items:baseline;gap:12px}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.note{font:400 13px/18px var(--body);color:var(--dim);margin:-6px 0 12px}
+
+.rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.rows li{display:flex;gap:12px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--line)}
+.rows .dot{width:7px;height:7px;border-radius:50%;flex:none}
+.rows p{margin:0;color:var(--muted)}
+.rows b{color:var(--fg);font-weight:600}
+
+.cards{display:grid;grid-template-columns:1fr;gap:12px}
+@media (min-width:860px){.cards{grid-template-columns:1fr 1fr}}
+.vcard{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+@media (min-width:760px){.vcard{padding:20px}}
+.vcard[data-mode="start"]{--c:var(--start)} .vcard[data-mode="move"]{--c:var(--move)} .vcard[data-mode="park"]{--c:var(--park)} .vcard[data-mode="wait"]{--c:var(--wait)}
+.state{display:inline-flex;align-items:center;gap:7px;font:600 12px/16px var(--body);color:var(--c)}
+.state::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--c)}
+.vcard h3{font:600 16px/22px var(--display);margin:0}
+.vcard .status{margin:0;color:var(--fg);font-size:15px;line-height:22px}
+.vcard .detail{margin:0;color:var(--muted);font-size:13px;line-height:18px}
+
+footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:400 13px/18px var(--body)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body>
+<div class="wrap">
+  <nav class="tabs" aria-label="Pages">
+    <a class="tab" href="index.html">Home</a>
+    <a class="tab" href="18-consulting.html">18 AI Consulting</a>
+    <a class="tab on" href="history-hot-seat.html" aria-current="page">History Hot Seat</a>
+  </nav>
+
+  <header>
+    <div class="head-row">
+      <div>
+        <div class="kicker">Instinct</div>
+        <h1>The History Hot Seat <span>the brand build</span></h1>
+      </div>
+      <div class="updated">Updated Sep 30, 3 AM ET</div>
+    </div>
+    <svg class="trace" viewBox="0 0 600 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 H64 q5 -3 10 0 h16 l5 -2 4 -8 5 13 5 -7 4 4 h52 q7 -5 14 0 h60 q5 -3 10 0 h16 l5 -2 4 -8 5 13 5 -7 4 4 H600" fill="none" stroke="#F0A93B" stroke-width="1.5" stroke-linejoin="round"/></svg>
+  </header>
+
+  <section aria-labelledby="h-now">
+    <h2 id="h-now">Where it stands</h2>
+    <ul class="rows">
+      <li><span class="dot" style="background:var(--move)"></span><p><b>Episode 1:</b> script done. Franklin, 7 minutes, every claim sourced.</p></li>
+      <li><span class="dot" style="background:var(--move)"></span><p><b>Test clip:</b> passed Sep 29, 9:56 PM. Full facial movement, no moderation block.</p></li>
+      <li><span class="dot" style="background:var(--move)"></span><p><b>HeyGen policy:</b> Franklin explicitly allowed. Educational and commercial use both clear.</p></li>
+      <li><span class="dot" style="background:var(--wait)"></span><p><b>Pilot:</b> $29 HeyGen Creator month starting around midnight. One month, evaluate, no auto-renewal.</p></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="h-pieces">
+    <h2 id="h-pieces">The pieces</h2>
+    <div class="cards">
+      <article class="vcard" data-mode="move">
+        <span class="state">Done</span>
+        <h3>Ep 1 script: Franklin</h3>
+        <p class="status">Seven minutes, every claim sourced.</p>
+        <p class="detail">First episode of the Hot Seat format: a founding father in the chair, pressed on the record.</p>
+      </article>
+
+      <article class="vcard" data-mode="move">
+        <span class="state">Passed</span>
+        <h3>Test clip</h3>
+        <p class="status">10.2 second Franklin render, completed Sep 29, 9:56 PM.</p>
+        <p class="detail">720x1280, watermarked, Avatar IV. Mouth, blink, brows and head turns all move. Single animated portrait. No moderation block. Free tier limits: 10s per video, 30s per month.</p>
+      </article>
+
+      <article class="vcard" data-mode="move">
+        <span class="state">Confirmed</span>
+        <h3>HeyGen policy</h3>
+        <p class="status">Long-deceased historical figures are allowed. Franklin named explicitly.</p>
+        <p class="detail">Support answer Sep 29, 9:12 PM: educational and commercial use both fine. A manual approval path exists if a clip ever gets flagged.</p>
+      </article>
+
+      <article class="vcard" data-mode="wait">
+        <span class="state">Starting</span>
+        <h3>$29 pilot</h3>
+        <p class="status">HeyGen Creator month, starting around midnight.</p>
+        <p class="detail">One month, then evaluate. No renewal without Aryeh's say.</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-next">
+    <h2 id="h-next">Next steps</h2>
+    <ul class="rows">
+      <li><p>Make episode 1 on the pilot month.</p></li>
+      <li><p>Evaluate HeyGen at the end of the month. Renewal only if Aryeh says so.</p></li>
+    </ul>
+  </section>
+
+  <footer>Read-only view. Updates land here as the episode moves.</footer>
+</div>
+</body></html>

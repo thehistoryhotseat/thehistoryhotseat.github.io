@@ -57,13 +57,19 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:4
 
 </style></head><body>
 <div class="wrap">
+  <nav class="tabs" aria-label="Pages">
+    <a class="tab" href="index.html">Home</a>
+    <a class="tab" href="18-consulting.html">18 AI Consulting</a>
+    <a class="tab" href="history-hot-seat.html">History Hot Seat</a>
+    <a class="tab on" href="hangr.html" aria-current="page">Hangr</a>
+  </nav>
   <header>
     <div class="head-row">
       <div>
         <div class="kicker">Aryeh and Yehuda</div>
         <h1>Hangr <span>command center</span></h1>
       </div>
-      <div class="updated">Updated Oct 1, 9:45 AM ET</div>
+      <div class="updated">Updated Oct 1, 9:30 PM ET</div>
     </div>
     <svg class="trace" viewBox="0 0 600 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 H64 q5 -3 10 0 h16 l5 -2 4 -8 5 13 5 -7 4 4 h52 q7 -5 14 0 h60 q5 -3 10 0 h16 l5 -2 4 -8 5 13 5 -7 4 4 H600" fill="none" stroke="#F0A93B" stroke-width="1.5" stroke-linejoin="round"/></svg>
   </header>
@@ -71,7 +77,7 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:4
   <section aria-labelledby="h-over">
     <h2 id="h-over">Project overview</h2>
     <div class="vcard" data-mode="start">
-      <span class="state">MVP built, demo verified live Oct 1</span>
+      <span class="state">MVP demo verified live Oct 1. Polish pass in progress.</span>
       <h3>A text-first POS for single-store dry cleaners and laundromats</h3>
       <p class="status">Built for the owner-operator who does not want an enterprise system. Customers get updates by text, and the shop runs from a simple counter screen. Full click-through verified Oct 1, 8:42 AM: intake, QR receipt, customer tracking page, pickup.</p>
     </div>
@@ -109,12 +115,24 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--dim);font:4
 
   <section aria-labelledby="h-dec">
     <h2 id="h-dec">Decisions log</h2>
-    <ul class="rows"><li><span class="dot" style="background:var(--move)"></span><p><b>Sep 30:</b> Name is Hangr.</p></li><li><span class="dot" style="background:var(--move)"></span><p><b>Sep 30:</b> Stack is Laravel API plus shadcn, per Yehuda's proposal. Greenlit.</p></li><li><span class="dot" style="background:var(--move)"></span><p><b>Sep 30:</b> MVP is a demo for shops. Shop pays card fees later, SMS costs pass through to the shop, photo pricing deferred.</p></li></ul>
+    <ul class="rows"><li><span class="dot" style="background:var(--move)"></span><p><b>Oct 1, PR #9 (draft):</b> Leave skipped steps off the customer tracking page.</p></li><li><span class="dot" style="background:var(--move)"></span><p><b>Oct 1, PR #9:</b> Care flags (stain, rush, special care) are per ticket.</p></li><li><span class="dot" style="background:var(--move)"></span><p><b>Oct 1, PR #9:</b> 10-second undo on Mark ready. The Ready text is held for those 10 seconds.</p></li><li><span class="dot" style="background:var(--move)"></span><p><b>Oct 1, PR #9:</b> Polish plan approved, built in priority order. Turnstile on sign-in, sign-up and forgot-password. Google Maps terms section 3.2.3 must be reviewed before the Google-listing setup (P6) ships.</p></li><li><span class="dot" style="background:var(--move)"></span><p><b>Sep 30:</b> Name is Hangr.</p></li><li><span class="dot" style="background:var(--move)"></span><p><b>Sep 30:</b> Stack is Laravel API plus shadcn, per Yehuda's proposal. Greenlit.</p></li><li><span class="dot" style="background:var(--move)"></span><p><b>Sep 30:</b> MVP is a demo for shops. Shop pays card fees later, SMS costs pass through to the shop, photo pricing deferred.</p></li></ul>
+  </section>
+
+  <section aria-labelledby="h-pol">
+    <h2 id="h-pol">Polish pass (PR #9)</h2>
+    <p class="note">Draft PR, not merged. Status from the PR as of Oct 1 evening; Yehuda's build runner reports checks green on each step.</p>
+    <ul class="rows"><li><span class="dot" style="background:var(--move)"></span><p><b>P1 Fix what a demo hits:</b> built. Photo failures now show a reason with Retry and Remove. Customer timeline and ready-date bugs fixed.</p></li><li><span class="dot" style="background:var(--move)"></span><p><b>P2 Status and Today by action:</b> built. Today is grouped by what needs doing.</p></li><li><span class="dot" style="background:var(--move)"></span><p><b>P3 Faster intake and pickup:</b> built. Care flags, undo, kept draft, hand over from Today.</p></li><li><span class="dot" style="background:var(--move)"></span><p><b>P4 and P5 Customer page and ticket history:</b> built. One history per ticket, directions link, open-now line, shop logo.</p></li><li><span class="dot" style="background:var(--move)"></span><p><b>P8 Turnstile:</b> built, inactive until the keys are set.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>P6 Shop setup from the Google listing:</b> not shown as built in the PR. Needs a Google Places key and the Maps terms review first.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>P7 Live domain (hangr.app):</b> waiting on DNS access, see below.</p></li></ul>
+  </section>
+
+  <section aria-labelledby="h-yeh">
+    <h2 id="h-yeh">Waiting on Yehuda (domain owner)</h2>
+    <p class="note">Per PR #9. These need the person who bought hangr.app and holds the Cloudflare zone.</p>
+    <ul class="rows"><li><span class="dot" style="background:var(--wait)"></span><p><b>DNS for hangr.app:</b> records, or a Cloudflare token limited to that zone. Plan is hangr.app for the web app, api.hangr.app for the API, www to the apex.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>Turnstile:</b> a Cloudflare Turnstile widget and its keys.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>Google Cloud:</b> a project with a Places API (New) key.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>Maps terms:</b> read Maps Platform terms section 3.2.3 before P6 ships.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>Business details for live texts:</b> legal name, EIN and website, for toll-free verification.</p></li></ul>
   </section>
 
   <section aria-labelledby="h-open">
     <h2 id="h-open">Open items</h2>
-    <ul class="rows"><li><span class="dot" style="background:var(--move)"></span><p><b>Shop demo package</b> - <a href="hangr-shop-demo-package.pdf">5-minute demo script, sit-down questions, first target list (PDF)</a>. Ready to use. Targets are public listings, not yet called.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>Known issue: photo upload</b> - failed uploads leave grey "Failed" thumbnails on the intake form. Needs a clean retry or remove.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>Live texts</b> - waiting on Yehuda. Texts are demo-only until business details are in.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>Customers page</b> - waiting on Yehuda. Still a placeholder.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>Online payment</b> - waiting on Yehuda. Payment is recorded at the counter only.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>Domain check</b> - is hangr available, and on which TLD.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>Demo validation</b> - show a cleaner owner who has shown interest. Script, questions and targets are in the shop demo package above.</p></li></ul>
+    <ul class="rows"><li><span class="dot" style="background:var(--move)"></span><p><b>Shop demo package</b> - <a href="hangr-shop-demo-package.pdf">5-minute demo script, sit-down questions, first target list (PDF)</a>. Ready to use. Targets are public listings, not yet called.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>Photo upload fix:</b> built in PR #9 (reason, Retry, Remove). Not yet re-tested on the live demo.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>Live texts</b> - waiting on Yehuda. Texts are demo-only until business details are in.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>Customers page</b> - waiting on Yehuda. Still a placeholder.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>Online payment</b> - waiting on Yehuda. Payment is recorded at the counter only.</p></li><li><span class="dot" style="background:var(--wait)"></span><p><b>Demo validation</b> - show a cleaner owner who has shown interest. Script, questions and targets are in the shop demo package above.</p></li></ul>
   </section>
 
   <section aria-labelledby="h-road">

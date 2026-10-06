@@ -1,0 +1,466 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-06",
+  "updated_by": "Tab",
+  "owner": "Aryeh",
+  "projects": [
+    {
+      "id": "hhs",
+      "name": "History Hot Seat",
+      "short": "HHS",
+      "icon": "HS",
+      "color": "coral",
+      "tagline": "Kids' history Shorts",
+      "status": {
+        "tone": "ok",
+        "label": "Moving"
+      },
+      "summary": "The Ep 1 Lincoln script is approved (per Instinct). Tab is rendering the draft video.",
+      "details": "3D cartoon style · host Max Rewind · Ep 1: Abraham Lincoln, Feb 1861",
+      "next": "Ep 1 draft video, for Aryeh to review",
+      "stats": [
+        {
+          "value": "3D",
+          "label": "cartoon style"
+        },
+        {
+          "value": "Ep 1",
+          "label": "Lincoln"
+        },
+        {
+          "value": "Oct 15",
+          "label": "release idea"
+        }
+      ],
+      "waiting": [
+        {
+          "text": "Review the Ep 1 draft video",
+          "by": "Tab",
+          "note": "when it lands"
+        }
+      ],
+      "shipped": [
+        {
+          "text": "Ep 1 Lincoln script, with a fact check",
+          "date": "2026-10-06",
+          "by": "Tab"
+        },
+        {
+          "text": "3 style frames: 3D cartoon, flat, paper cut-out",
+          "date": "2026-10-06",
+          "by": "Tab"
+        },
+        {
+          "text": "Franklin pilot script (7 min, every claim sourced)",
+          "date": "2026-09-30",
+          "by": "Previous site",
+          "note": "earlier pilot, before the Lincoln Ep 1"
+        },
+        {
+          "text": "HeyGen test clip passed (10 s Franklin)",
+          "date": "2026-09-29",
+          "by": "Previous site",
+          "note": "earlier pilot"
+        }
+      ],
+      "in_progress": [
+        {
+          "text": "Ep 1 draft video render",
+          "date": "2026-10-06",
+          "by": "Tab"
+        }
+      ],
+      "up_next": [
+        {
+          "text": "Release Ep 1 on Oct 15?",
+          "note": "Idea, not decided: the anniversary of Grace Bedell's letter"
+        },
+        {
+          "text": "HeyGen access ends Oct 30",
+          "by": "Previous site",
+          "note": "Renewal only if Aryeh says so (Sep 30)"
+        }
+      ],
+      "decisions": [
+        {
+          "text": "Aryeh approved the Ep 1 script",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Ep 1 title: “An 11-Year-Old Gave Lincoln His Beard”",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Ep 1 figure: Lincoln, Feb 1861 (chin beard, no mustache)",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Host: Max Rewind",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Style: 3D cartoon",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        }
+      ],
+      "links": [
+        {
+          "label": "Previous History Hot Seat page",
+          "href": "history-hot-seat.html"
+        }
+      ]
+    },
+    {
+      "id": "hangr",
+      "name": "Hangr",
+      "short": "Hangr",
+      "icon": "Hg",
+      "color": "teal",
+      "tagline": "Dry-cleaner POS",
+      "status": {
+        "tone": "you",
+        "label": "Needs you"
+      },
+      "summary": "Promo script v2 (44 s) is waiting on your OK. Walk-in pitches in Rockland County, NY start this week.",
+      "details": "Locked offer: “Try it free for 60 days” (per Instinct) · hangr.app",
+      "next": "Walk-in pitches this week, Rockland County, NY",
+      "stats": [
+        {
+          "value": "v2",
+          "label": "promo (44 s)"
+        },
+        {
+          "value": "5",
+          "label": "top site fixes"
+        },
+        {
+          "value": "60-day",
+          "label": "free trial"
+        }
+      ],
+      "waiting": [
+        {
+          "text": "Approve promo script v2 (44 s)",
+          "by": "Tab"
+        },
+        {
+          "text": "Screen recording of one real order",
+          "by": "Tab",
+          "note": "for the promo"
+        },
+        {
+          "text": "Logo files",
+          "by": "Tab",
+          "note": "for the promo"
+        },
+        {
+          "text": "Voiceover: yes or no?",
+          "by": "Tab",
+          "note": "for the promo"
+        }
+      ],
+      "shipped": [
+        {
+          "text": "Promo script v2: 44 s, ends on “Try it free for 60 days”",
+          "date": "2026-10-06",
+          "by": "Tab"
+        },
+        {
+          "text": "Site review of hangr.app, /example and /apply (top 5 fixes)",
+          "date": "2026-10-06",
+          "by": "Tab"
+        },
+        {
+          "text": "Promo script v1",
+          "date": "2026-10-06",
+          "by": "Tab"
+        }
+      ],
+      "in_progress": [],
+      "up_next": [
+        {
+          "text": "Walk-in pitches in Rockland County, NY",
+          "note": "this week"
+        },
+        {
+          "text": "Update the site's offer copy to the 60-day offer"
+        }
+      ],
+      "decisions": [
+        {
+          "text": "Promo offer locked: “Try it free for 60 days”",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        }
+      ],
+      "links": [
+        {
+          "label": "hangr.app",
+          "href": "https://hangr.app/"
+        },
+        {
+          "label": "Previous Hangr page",
+          "href": "hangr.html"
+        },
+        {
+          "label": "Shop demo package (PDF)",
+          "href": "hangr-shop-demo-package.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "name": "18 AI Consulting",
+      "short": "18 AI",
+      "icon": "18",
+      "color": "violet",
+      "tagline": "AI agency for local trades",
+      "status": {
+        "tone": "ok",
+        "label": "Moving"
+      },
+      "summary": "First outreach went to 3 of 6 prospects on Sep 29. Next: follow-ups, then the 2 remaining prospects.",
+      "details": "Carried over from the previous site (last updated Sep 30). No newer status has been added yet.",
+      "next": "Follow-ups to the 3 contacted shops",
+      "stats": [
+        {
+          "value": "6",
+          "label": "prospects"
+        },
+        {
+          "value": "3",
+          "label": "contacted Sep 29"
+        },
+        {
+          "value": "1",
+          "label": "needs a contact URL"
+        }
+      ],
+      "waiting": [],
+      "shipped": [
+        {
+          "text": "First outreach: 3 shops emailed",
+          "date": "2026-09-29",
+          "by": "Previous site"
+        },
+        {
+          "text": "Partner deck and HVAC pitch deck",
+          "by": "Previous site"
+        },
+        {
+          "text": "Business plan, logo, questionnaire, Outlook set up",
+          "by": "Previous site"
+        }
+      ],
+      "in_progress": [],
+      "up_next": [
+        {
+          "text": "Follow-ups to the 3 contacted shops",
+          "by": "Previous site"
+        },
+        {
+          "text": "Reach the 2 remaining listed prospects",
+          "by": "Previous site"
+        },
+        {
+          "text": "Atzl Air: contact URL needed",
+          "by": "Previous site",
+          "note": "their site didn't load"
+        }
+      ],
+      "decisions": [],
+      "links": [
+        {
+          "label": "Previous 18 AI Consulting page",
+          "href": "18-consulting.html"
+        },
+        {
+          "label": "Partner deck (PDF)",
+          "href": "partner-deck.pdf"
+        },
+        {
+          "label": "HVAC pitch deck (PDF)",
+          "href": "hvac-pitch.pdf"
+        }
+      ]
+    },
+    {
+      "id": "trade",
+      "name": "Trading",
+      "short": "Trading",
+      "icon": "Tr",
+      "color": "green",
+      "tagline": "Trading desk",
+      "sample": true,
+      "status": {
+        "tone": "idle",
+        "label": "Sample"
+      },
+      "summary": "SAMPLE: no real trading data has been added yet. This tab only shows the layout.",
+      "details": "The previous site listed a “Trading desk” under standing work. Nothing else is known.",
+      "next": "SAMPLE: daily desk note",
+      "stats": [],
+      "waiting": [],
+      "shipped": [
+        {
+          "text": "Daily desk note",
+          "sample": true
+        }
+      ],
+      "in_progress": [
+        {
+          "text": "Watchlist",
+          "sample": true
+        }
+      ],
+      "up_next": [
+        {
+          "text": "Weekly recap",
+          "sample": true
+        }
+      ],
+      "decisions": [],
+      "links": []
+    }
+  ],
+  "topics": [
+    {
+      "id": "cc",
+      "name": "Command center",
+      "short": "Command center",
+      "color": "ink"
+    }
+  ],
+  "coming_up": [
+    {
+      "when": "This week",
+      "text": "Hangr walk-in pitches, Rockland County, NY",
+      "project": "hangr"
+    },
+    {
+      "when": "Oct 15",
+      "date": "2026-10-15",
+      "text": "Possible Ep 1 release (Grace Bedell's letter anniversary). Idea, not decided.",
+      "project": "hhs"
+    },
+    {
+      "when": "Oct 30",
+      "date": "2026-10-30",
+      "text": "HeyGen access ends (from the previous site)",
+      "project": "hhs"
+    }
+  ],
+  "feed": [
+    {
+      "date": "2026-10-06",
+      "author": "tab",
+      "project": "cc",
+      "kind": "In progress",
+      "text": "Building v1 of this command center: one page that reads data.json."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "cc",
+      "kind": "Decision",
+      "text": "Command center design approved."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "tab",
+      "project": "hhs",
+      "kind": "In progress",
+      "text": "Rendering the Ep 1 draft video. It goes to Aryeh for review when it's done."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Decision",
+      "text": "Aryeh approved the Ep 1 Lincoln script."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "tab",
+      "project": "hhs",
+      "kind": "Shipped",
+      "text": "Ep 1 Lincoln script, with a fact check of every claim."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "tab",
+      "project": "hangr",
+      "kind": "Shipped",
+      "text": "Site review of hangr.app, /example and /apply, with the top 5 fixes."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "tab",
+      "project": "hangr",
+      "kind": "Needs Aryeh",
+      "ask": "Approve promo v2",
+      "text": "Promo script v2 is ready: 44 s, ends on “Try it free for 60 days.”"
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Decision",
+      "text": "Promo offer locked: “Try it free for 60 days.”"
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Decision",
+      "text": "Ep 1: Abraham Lincoln, Feb 1861 (chin beard, no mustache). Title: “An 11-Year-Old Gave Lincoln His Beard.”"
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Decision",
+      "text": "Style: 3D cartoon. Host: Max Rewind."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "tab",
+      "project": "hhs",
+      "kind": "Shipped",
+      "text": "3 style frames: 3D cartoon, flat and paper cut-out."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "tab",
+      "project": "hangr",
+      "kind": "Shipped",
+      "text": "Promo script v1."
+    },
+    {
+      "date": "2026-09-30",
+      "author": "site",
+      "project": "hhs",
+      "kind": "Archive",
+      "text": "HeyGen Creator month started for the Franklin pilot. Auto-renew off, access through Oct 30."
+    },
+    {
+      "date": "2026-09-29",
+      "author": "site",
+      "project": "hhs",
+      "kind": "Archive",
+      "text": "Franklin test clip passed: 10 seconds, with mouth, blink, brow and head movement."
+    },
+    {
+      "date": "2026-09-29",
+      "author": "site",
+      "project": "ai",
+      "kind": "Archive",
+      "text": "First outreach sent: 3 HVAC shops emailed from Outlook."
+    }
+  ]
+}

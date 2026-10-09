@@ -1,0 +1,640 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-09",
+  "updated_by": "Instinct",
+  "owner": "Aryeh",
+  "projects": [
+    {
+      "id": "hhs",
+      "name": "History Hot Seat",
+      "short": "HHS",
+      "icon": "HS",
+      "color": "coral",
+      "tagline": "Kids' history Shorts",
+      "status": {
+        "tone": "ok",
+        "label": "Drafts delivered"
+      },
+      "summary": "Lincoln v1.3 and Washington v1.1 delivered to Aryeh. Lincoln panel review passed; final audio comparison is with Aryeh. Washington voice matched closer to Ep 1. Publishing not yet verified.",
+      "details": "3D cartoon style \u00b7 host Max Rewind \u00b7 Ep 1: Abraham Lincoln, Feb 1861",
+      "next": "Finish final cut checks and prepare publishing plus Shorts",
+      "stats": [
+        {
+          "value": "3D",
+          "label": "cartoon style"
+        },
+        {
+          "value": "Ep 1",
+          "label": "Lincoln"
+        }
+      ],
+      "waiting": [],
+      "shipped": [
+        {
+          "text": "Lincoln Ep 1 v1.3 delivered; panel cleared",
+          "date": "2026-10-08",
+          "by": "Tab"
+        },
+        {
+          "text": "Washington Ep 2 v1.1 delivered; Max voice closer to Ep 1",
+          "date": "2026-10-08",
+          "by": "Tab"
+        },
+        {
+          "text": "Channel manager access accepted; 6 old videos unlisted (verified)",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Views playbook for a zero-subscriber kids channel",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Ep 1 Lincoln script, with a fact check",
+          "date": "2026-10-06",
+          "by": "Tab"
+        },
+        {
+          "text": "3 style frames: 3D cartoon, flat, paper cut-out",
+          "date": "2026-10-06",
+          "by": "Tab"
+        },
+        {
+          "text": "Franklin pilot script (7 min, every claim sourced)",
+          "date": "2026-09-30",
+          "by": "Previous site",
+          "note": "earlier pilot, before the Lincoln Ep 1"
+        },
+        {
+          "text": "HeyGen test clip passed (10 s Franklin)",
+          "date": "2026-09-29",
+          "by": "Previous site",
+          "note": "earlier pilot"
+        }
+      ],
+      "in_progress": [
+        {
+          "text": "Final Lincoln audio check and publishing preparation",
+          "date": "2026-10-08",
+          "by": "Instinct"
+        },
+        {
+          "text": "Schedule new episodes and Shorts after final checks",
+          "date": "2026-10-08",
+          "by": "Instinct"
+        }
+      ],
+      "up_next": [
+        {
+          "text": "Shorts and cutdowns, 4-5 a week after Ep 1"
+        }
+      ],
+      "decisions": [
+        {
+          "text": "Ep 2: Washington, continuing the founding-fathers thread",
+          "date": "2026-10-08",
+          "by": "Instinct"
+        },
+        {
+          "text": "Keep the six old videos hidden; use new Tab-created videos only",
+          "date": "2026-10-07",
+          "by": "Instinct"
+        },
+        {
+          "text": "Lincoln script cleared for draft rendering; review the cut before posting",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Ep 1 title: \"An 11-Year-Old Gave Lincoln His Beard\"",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Ep 1 figure: Lincoln, Feb 1861 (chin beard, no mustache)",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Host: Max Rewind",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Style: 3D cartoon",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        }
+      ],
+      "links": [
+        {
+          "label": "Previous History Hot Seat page",
+          "href": "history-hot-seat.html"
+        }
+      ]
+    },
+    {
+      "id": "hangr",
+      "name": "Hangr",
+      "short": "Hangr",
+      "icon": "Hg",
+      "color": "teal",
+      "tagline": "Dry-cleaner POS",
+      "status": {
+        "tone": "you",
+        "label": "Needs you"
+      },
+      "summary": "Tab resumed the remaining cleaners Oct 7, then stopped after a repeated-opening glitch. Eight cleaners remain. Promo v4 delivered; final fixes identified.",
+      "details": "Oct 7: #27 hung up before the pitch; #30 opening restarted four times after a recorded greeting. Tab reports no live call or scheduled restart.",
+      "next": "Choose whether Tab should fix delivery and finish the remaining eight",
+      "stats": [
+        {
+          "value": "R1",
+          "label": "live (per Yehuda)"
+        },
+        {
+          "value": "40",
+          "label": "Brooklyn cleaners"
+        },
+        {
+          "value": "v4",
+          "label": "promo delivered"
+        }
+      ],
+      "waiting": [
+        {
+          "text": "Fix delivery and finish the eight calls, or hold?",
+          "by": "Instinct"
+        }
+      ],
+      "shipped": [
+        {
+          "text": "Promo draft v4 delivered to Aryeh",
+          "date": "2026-10-06",
+          "by": "Tab"
+        },
+        {
+          "text": "Promo review: description-based only; reviewers could not watch footage",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Promo draft v1 (44 s)",
+          "date": "2026-10-06",
+          "by": "Tab"
+        },
+        {
+          "text": "Release 1 live: Today screen, faster intake, Customers page",
+          "date": "2026-10-06",
+          "by": "Yehuda"
+        },
+        {
+          "text": "Brooklyn list: 40 independent cleaners with direct phones",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Full site review delivered to Yehuda for assessment",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Promo script v2: 44 s, ends on \"Try it free for 60 days\"",
+          "date": "2026-10-06",
+          "by": "Tab"
+        },
+        {
+          "text": "Site review of hangr.app, /example and /apply (top 5 fixes)",
+          "date": "2026-10-06",
+          "by": "Tab"
+        },
+        {
+          "text": "Promo script v1",
+          "date": "2026-10-06",
+          "by": "Tab"
+        }
+      ],
+      "in_progress": [
+        {
+          "text": "Calling paused after repeated-opening glitch; eight remain",
+          "date": "2026-10-07",
+          "by": "Tab"
+        },
+        {
+          "text": "Promo fixes identified: clearer opening, ready-text payoff, URL read",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Reconcile call outcomes before any further run",
+          "date": "2026-10-07",
+          "by": "Instinct"
+        }
+      ],
+      "up_next": [
+        {
+          "text": "Rockland walk-in pitches",
+          "note": "this week"
+        },
+        {
+          "text": "Release 2: rebuilt site, pricing page, Privacy and Terms"
+        }
+      ],
+      "decisions": [
+        {
+          "text": "Automated next-day batch paused while Aryeh hand-dials",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Promo offer locked: \"Try it free for 60 days\"",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Promo v2 cleared for draft production; final cut review still required",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        }
+      ],
+      "links": [
+        {
+          "label": "hangr.app",
+          "href": "https://hangr.app/"
+        },
+        {
+          "label": "Previous Hangr page",
+          "href": "hangr.html"
+        },
+        {
+          "label": "Shop demo package (PDF)",
+          "href": "hangr-shop-demo-package.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "name": "18 AI Consulting",
+      "short": "18 AI",
+      "icon": "18",
+      "color": "violet",
+      "tagline": "AI agency for local trades",
+      "status": {
+        "tone": "ok",
+        "label": "Moving"
+      },
+      "summary": "Two emailed Oct 9, verified in Sent: BMC Plumbing (new address) and Vincent Aloi at Aloi Plumbing. Olympic Heating Oct 8 verified; Pearl River Plumbing reported but still unverified. Standing outreach and reply monitoring continue.",
+      "details": "Rockland-area prospects; sent-mail checks prevent duplicate outreach. Replies and bounces monitored separately.",
+      "next": "Next weekday outreach batch; monitor replies and bounces",
+      "stats": [
+        {
+          "value": "2",
+          "label": "sent Oct 9"
+        },
+        {
+          "value": "1",
+          "label": "verified Oct 8"
+        },
+        {
+          "value": "4",
+          "label": "sent Oct 7"
+        },
+        {
+          "value": "2",
+          "label": "sent Oct 6"
+        }
+      ],
+      "waiting": [],
+      "shipped": [
+        {
+          "text": "BMC Plumbing and Aloi Plumbing emailed; verified in Sent",
+          "date": "2026-10-09",
+          "by": "Instinct"
+        },
+        {
+          "text": "Olympic Heating emailed; verified in Sent",
+          "date": "2026-10-08",
+          "by": "Instinct"
+        },
+        {
+          "text": "AMC, Sasso, R.A.N. and Callaghan's emailed; verified in Sent",
+          "date": "2026-10-07",
+          "by": "Instinct"
+        },
+        {
+          "text": "Oct 6: Stony Point Heating and ASAP Plumbing emailed",
+          "date": "2026-10-06",
+          "by": "Instinct"
+        },
+        {
+          "text": "Five new prospect emails sent; verified in Sent",
+          "date": "2026-10-05",
+          "by": "Instinct"
+        },
+        {
+          "text": "First outreach: 3 shops emailed",
+          "date": "2026-09-29",
+          "by": "Previous site"
+        },
+        {
+          "text": "Partner deck and HVAC pitch deck",
+          "by": "Previous site"
+        },
+        {
+          "text": "Business plan, logo, questionnaire, Outlook set up",
+          "by": "Previous site"
+        }
+      ],
+      "in_progress": [
+        {
+          "text": "Standing cold outreach and reply monitoring",
+          "by": "Instinct"
+        }
+      ],
+      "up_next": [
+        {
+          "text": "Next weekday batch of new Rockland-area prospects",
+          "by": "Instinct"
+        }
+      ],
+      "decisions": [],
+      "links": [
+        {
+          "label": "Previous 18 AI Consulting page",
+          "href": "18-consulting.html"
+        },
+        {
+          "label": "Partner deck (PDF)",
+          "href": "partner-deck.pdf"
+        },
+        {
+          "label": "HVAC pitch deck (PDF)",
+          "href": "hvac-pitch.pdf"
+        }
+      ]
+    },
+    {
+      "id": "trade",
+      "name": "Trading",
+      "short": "Trading",
+      "icon": "Tr",
+      "color": "green",
+      "tagline": "Trading desk",
+      "sample": true,
+      "status": {
+        "tone": "idle",
+        "label": "SAMPLE"
+      },
+      "summary": "SAMPLE: no real trading data has been added yet. This tab only shows the layout.",
+      "details": "No real desk data connected. Nothing here is a position, signal or recommendation.",
+      "next": "Connect real desk data",
+      "stats": [],
+      "waiting": [],
+      "shipped": [],
+      "in_progress": [],
+      "up_next": [],
+      "decisions": [],
+      "links": []
+    }
+  ],
+  "topics": [
+    {
+      "id": "cc",
+      "name": "Command center",
+      "short": "Command center",
+      "color": "ink"
+    }
+  ],
+  "coming_up": [
+    {
+      "when": "This week",
+      "text": "Hangr walk-in pitches, Rockland County, NY",
+      "project": "hangr"
+    },
+    {
+      "when": "Oct 15",
+      "date": "2026-10-15",
+      "text": "Possible Ep 1 release (Grace Bedell's letter anniversary). Idea, not decided.",
+      "project": "hhs"
+    },
+    {
+      "when": "Oct 30",
+      "date": "2026-10-30",
+      "text": "HeyGen access ends (from the previous site)",
+      "project": "hhs"
+    }
+  ],
+  "feed": [
+    {
+      "date": "2026-10-09",
+      "author": "instinct",
+      "project": "ai",
+      "kind": "Shipped",
+      "text": "BMC Plumbing emailed at its new address and Vincent Aloi at Aloi Plumbing emailed direct; both verified in Sent. McNamara and Valley Mechanical have no email anywhere, contact form only."
+    },
+    {
+      "date": "2026-10-08",
+      "author": "tab",
+      "project": "hhs",
+      "kind": "Shipped",
+      "text": "Lincoln v1.3 and Washington v1.1 delivered. Washington Max voice matched closer to Ep 1; no new spend reported."
+    },
+    {
+      "date": "2026-10-08",
+      "author": "instinct",
+      "project": "ai",
+      "kind": "Shipped",
+      "text": "Olympic Heating emailed, verified in Sent. Pearl River send is reported but still unverified."
+    },
+    {
+      "date": "2026-10-08",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "In progress",
+      "text": "Washington selected for Ep 2. Drafting kid questions and myth-busting beats, then panel review. Lincoln MP4 is still undelivered."
+    },
+    {
+      "date": "2026-10-07",
+      "author": "tab",
+      "project": "hangr",
+      "kind": "Update",
+      "text": "Stopped after the opening restarted four times on #30; #27 hung up before the pitch. Eight remain. No restart scheduled; delivery fix or hold is awaiting Aryeh."
+    },
+    {
+      "date": "2026-10-07",
+      "author": "instinct",
+      "project": "ai",
+      "kind": "Shipped",
+      "text": "Emailed four Rockland plumbers: AMC, Sasso, R.A.N. and Callaghan's. Verified in Sent."
+    },
+    {
+      "date": "2026-10-07",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Update",
+      "text": "Lincoln Ep 1 MP4 is still undelivered. Chasing Tab for the actual file before upload and Shorts; the six old videos stay hidden."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Update",
+      "text": "Hand-dialing update: no interest at Downtown Cleaners, a later hang-up, and Brooklyn Cleaner & Tailor skipped for the wrong office number. Clean Green Cleaners is next."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "In progress",
+      "text": "Tracking Aryeh's hand-dialed calls one shop at a time. My Favorite Cleaners will notify its owner; automated batch paused."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "tab",
+      "project": "hangr",
+      "kind": "Update",
+      "text": "Calls stopped for today after 7 dials, no interest and no DNCs reported. Provider throttling and a voice glitch interrupted the run."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Update",
+      "text": "Promo v4 panel review was description-based because uploads failed. Fixes identified for the opening, ready-text payoff and URL read."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "tab",
+      "project": "hangr",
+      "kind": "Shipped",
+      "text": "Promo v4 delivered with real logo and brand-blue end card."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "ai",
+      "kind": "Shipped",
+      "text": "Emailed Stony Point Heating and ASAP Plumbing (verified in Sent)."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "tab",
+      "project": "hangr",
+      "kind": "Shipped",
+      "text": "Promo draft v1 (44 s). Recut for URL read and notification wording is under way."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Decision",
+      "text": "Call script says \"free during beta\". Stuck line: \"I'll have the founder call you back\"."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Shipped",
+      "text": "Manager access confirmed; all 6 old videos unlisted and checked one by one."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Shipped",
+      "text": "Views playbook done; production rules added for Ep 1."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "cc",
+      "kind": "Shipped",
+      "text": "Command Center v1 is live. Project status and waiting items refreshed."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Needs Aryeh",
+      "text": "Brooklyn script and 40-cleaner list are ready for review. Choose the call offer before any calls."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "In progress",
+      "text": "Manager invitation received. Acceptance and unlisting the six old videos are still pending."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Shipped",
+      "text": "Built the Brooklyn list: 40 independent cleaners with direct phones."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Decision",
+      "text": "Promo v2 cleared for draft production. Final cut goes to Aryeh for review."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "tab",
+      "project": "hangr",
+      "kind": "In progress",
+      "text": "Producing the Hangr promo draft; real demo recordings can replace placeholders when supplied."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Shipped",
+      "text": "Delivered the full site review to Yehuda for assessment."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "tab",
+      "project": "hangr",
+      "kind": "Shipped",
+      "text": "Completed the site review and 44-second promo script v2."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "tab",
+      "project": "hhs",
+      "kind": "In progress",
+      "text": "Rendering Ep 1 Lincoln as a draft for review."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Decision",
+      "text": "Lincoln script cleared for draft rendering; final video review remains before posting."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Decision",
+      "text": "Locked 3D cartoon style and host Max Rewind."
+    },
+    {
+      "date": "2026-10-06",
+      "author": "tab",
+      "project": "hhs",
+      "kind": "Shipped",
+      "text": "Completed the Lincoln script and three style frames."
+    },
+    {
+      "date": "2026-10-05",
+      "author": "instinct",
+      "project": "ai",
+      "kind": "Shipped",
+      "text": "Sent five new prospect emails; standing weekday outreach remains active."
+    }
+  ]
+}

@@ -226,6 +226,11 @@
       ],
       "in_progress": [
         {
+          "text": "Warm Midwest distributor lead; SPOT/SMRT brief sent; Metalprogetti feasible per Yehuda research",
+          "date": "2026-10-15",
+          "by": "Instinct"
+        },
+        {
           "text": "Publication: Hamodia quoted $220 for both papers + affidavits; RCT pending, choice with Aryeh",
           "date": "2026-10-15",
           "by": "Instinct"
@@ -460,6 +465,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-15",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Update",
+      "text": "Sales motion: a Midwest supplies distributor (MN/WI/IA/ND/SD) is warm on referring Hangr; SPOT and SMRT pricing brief delivered. On Metalprogetti conveyor sync: not today, but Yehuda's research finds their cloud Conveyor API makes it feasible; partner access is the next step."
+    },
     {
       "date": "2026-10-15",
       "author": "instinct",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-12",
+  "updated": "2026-10-14",
   "updated_by": "Instinct",
   "owner": "Aryeh",
   "projects": [
@@ -16,7 +16,7 @@
         "label": "Drafts delivered"
       },
       "summary": "Lincoln v1.3 and Washington v1.1 delivered to Aryeh. Lincoln panel review passed; final audio comparison is with Aryeh. Washington voice matched closer to Ep 1. Publishing not yet verified.",
-      "details": "3D cartoon style \u00b7 host Max Rewind \u00b7 Ep 1: Abraham Lincoln, Feb 1861",
+      "details": "3D cartoon style · host Max Rewind · Ep 1: Abraham Lincoln, Feb 1861",
       "next": "Finish final cut checks and prepare publishing plus Shorts",
       "stats": [
         {
@@ -145,13 +145,13 @@
         "tone": "you",
         "label": "Needs you"
       },
-      "summary": "Tab resumed the remaining cleaners Oct 7, then stopped after a repeated-opening glitch. Eight cleaners remain. Promo v4 delivered; final fixes identified.",
+      "summary": "Yehuda's agent reports the full POS build complete and live on production; texting, payments and billing stay off until legal name, EIN, Stripe and Twilio. LLC operating agreement drafted and with Yehuda for review; EIN filing hit an IRS outage, retry pending. Call campaign still paused, eight cleaners remain.",
       "details": "Oct 7: #27 hung up before the pitch; #30 opening restarted four times after a recorded greeting. Tab reports no live call or scheduled restart.",
-      "next": "Choose whether Tab should fix delivery and finish the remaining eight",
+      "next": "Retry the EIN filing, settle Yehuda's agreement changes; calls decision still open",
       "stats": [
         {
-          "value": "R1",
-          "label": "live (per Yehuda)"
+          "value": "Full",
+          "label": "build live (per Yehuda)"
         },
         {
           "value": "40",
@@ -169,6 +169,11 @@
         }
       ],
       "shipped": [
+        {
+          "text": "Full POS build complete and live on production (per Yehuda)",
+          "date": "2026-10-14",
+          "by": "Yehuda"
+        },
         {
           "text": "Promo draft v4 delivered to Aryeh",
           "date": "2026-10-06",
@@ -216,6 +221,21 @@
         }
       ],
       "in_progress": [
+        {
+          "text": "EIN filing hit IRS outage twice after identity step; retry pending",
+          "date": "2026-10-14",
+          "by": "Instinct"
+        },
+        {
+          "text": "Operating agreement with Yehuda for review; his changes due back",
+          "date": "2026-10-14",
+          "by": "Instinct"
+        },
+        {
+          "text": "LLC publication quotes requested from Rockland County Times and Hamodia",
+          "date": "2026-10-14",
+          "by": "Instinct"
+        },
         {
           "text": "Calling paused after repeated-opening glitch; eight remain",
           "date": "2026-10-07",
@@ -431,6 +451,27 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-14",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Update",
+      "text": "Hangr App LLC operating agreement drafted and panel-reviewed, sent to Yehuda for review and his details. His changes come back to Aryeh before anything is signed."
+    },
+    {
+      "date": "2026-10-14",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Update",
+      "text": "EIN filing hit an IRS outage twice after the identity step; nothing submitted, retry pending. Publication quotes requested from Rockland County Times and Hamodia."
+    },
+    {
+      "date": "2026-10-14",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Shipped",
+      "text": "Yehuda's agent reports the full POS build complete and live on production. Texting, payments and billing stay off until legal name, EIN, Stripe and Twilio are set."
+    },
     {
       "date": "2026-10-12",
       "author": "instinct",

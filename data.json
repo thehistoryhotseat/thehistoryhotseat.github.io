@@ -145,9 +145,9 @@
         "tone": "you",
         "label": "Needs you"
       },
-      "summary": "Yehuda's agent reports the full POS build complete and live on production; texting, payments and billing stay off until legal name, EIN, Stripe and Twilio. LLC operating agreement drafted and with Yehuda for review. EIN must be filed by Aryeh himself - answer sheet sent, reminder set. Call campaign still paused, eight cleaners remain.",
+      "summary": "Yehuda's agent reports the full POS build complete and live on production; texting, payments and billing stay off until legal name, EIN, Stripe and Twilio. LLC operating agreement drafted and with Yehuda for review. EIN must be filed by Aryeh himself - answer sheet sent, reminder set. First publication quote in: $220 from Hamodia, Rockland County Times pending. Call campaign still paused, eight cleaners remain.",
       "details": "Oct 7: #27 hung up before the pitch; #30 opening restarted four times after a recorded greeting. Tab reports no live call or scheduled restart.",
-      "next": "Aryeh files the EIN himself, settle Yehuda's agreement changes; calls decision still open",
+      "next": "EIN self-file, publication pick ($220 Hamodia or wait for Rockland County Times), Yehuda's agreement changes; calls decision still open",
       "stats": [
         {
           "value": "Full",
@@ -226,6 +226,11 @@
       ],
       "in_progress": [
         {
+          "text": "Publication: Hamodia quoted $220 for both papers + affidavits; RCT pending, choice with Aryeh",
+          "date": "2026-10-15",
+          "by": "Instinct"
+        },
+        {
           "text": "EIN: IRS blocks third-party filing; Aryeh files himself, reminder set",
           "date": "2026-10-14",
           "by": "Instinct"
@@ -236,17 +241,7 @@
           "by": "Instinct"
         },
         {
-          "text": "LLC publication quotes requested from Rockland County Times and Hamodia",
-          "date": "2026-10-14",
-          "by": "Instinct"
-        },
-        {
           "text": "Operating agreement with Yehuda for review; his changes due back",
-          "date": "2026-10-14",
-          "by": "Instinct"
-        },
-        {
-          "text": "LLC publication quotes requested from Rockland County Times and Hamodia",
           "date": "2026-10-14",
           "by": "Instinct"
         },
@@ -465,6 +460,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-15",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Update",
+      "text": "First LLC publication quote in: Hamodia offers $220 covering both required papers plus notarized affidavits. Rockland County Times has not answered; the choice and the payment call are Aryeh's."
+    },
     {
       "date": "2026-10-14",
       "author": "instinct",

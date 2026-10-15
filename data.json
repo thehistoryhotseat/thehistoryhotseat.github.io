@@ -226,6 +226,16 @@
       ],
       "in_progress": [
         {
+          "text": "Demos booked: Lapels Cleaners tonight 8 PM, David Landau Fri 9:30 AM",
+          "date": "2026-10-15",
+          "by": "Instinct"
+        },
+        {
+          "text": "Operating agreement filled with both members' details; with Yehuda for review",
+          "date": "2026-10-15",
+          "by": "Instinct"
+        },
+        {
           "text": "Warm Midwest distributor lead; SPOT/SMRT brief sent; Metalprogetti feasible per Yehuda research",
           "date": "2026-10-15",
           "by": "Instinct"
@@ -237,16 +247,6 @@
         },
         {
           "text": "EIN: IRS blocks third-party filing; Aryeh files himself, reminder set",
-          "date": "2026-10-14",
-          "by": "Instinct"
-        },
-        {
-          "text": "Operating agreement with Yehuda for review; his changes due back",
-          "date": "2026-10-14",
-          "by": "Instinct"
-        },
-        {
-          "text": "Operating agreement with Yehuda for review; his changes due back",
           "date": "2026-10-14",
           "by": "Instinct"
         },
@@ -447,6 +447,12 @@
   ],
   "coming_up": [
     {
+      "when": "Tonight 8:00 PM",
+      "date": "2026-10-15",
+      "text": "Hangr demo: Lapels Cleaners",
+      "project": "hangr"
+    },
+    {
       "when": "This week",
       "text": "Hangr walk-in pitches, Rockland County, NY",
       "project": "hangr"
@@ -458,6 +464,12 @@
       "project": "hhs"
     },
     {
+      "when": "Fri 9:30 AM",
+      "date": "2026-10-16",
+      "text": "Hangr demo: David Landau",
+      "project": "hangr"
+    },
+    {
       "when": "Oct 30",
       "date": "2026-10-30",
       "text": "HeyGen access ends (from the previous site)",
@@ -465,6 +477,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-15",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Update",
+      "text": "Two shop demos booked on Yehuda's calendar: Lapels Cleaners tonight 8:00 PM and David Landau Friday 9:30 AM. Operating agreement now carries both members' names and addresses; still with Yehuda for review."
+    },
     {
       "date": "2026-10-15",
       "author": "instinct",

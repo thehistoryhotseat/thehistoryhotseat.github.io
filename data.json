@@ -174,6 +174,11 @@
       ],
       "shipped": [
         {
+          "text": "Marketing site rebuilt and shipped to hangr.app: full-width sections, animated app mockups replacing screenshots, stock photos (per Yehuda)",
+          "date": "2026-10-16",
+          "by": "Yehuda"
+        },
+        {
           "text": "Full POS build complete and live on production (per Yehuda)",
           "date": "2026-10-14",
           "by": "Yehuda"
@@ -465,6 +470,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-16",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Shipped",
+      "text": "Yehuda's agent reports the hangr.app marketing site rebuilt and shipped in one deploy: full-width color bands, animated mockups replacing live screenshots, a looping order story on the home, five licensed stock photos, 218 old screenshot files removed."
+    },
     {
       "date": "2026-10-16",
       "author": "instinct",

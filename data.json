@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "updated_by": "Instinct",
   "owner": "Aryeh",
   "projects": [
@@ -447,21 +447,9 @@
   ],
   "coming_up": [
     {
-      "when": "Tonight 8:00 PM",
-      "date": "2026-10-15",
-      "text": "Hangr demo: Lapels Cleaners",
-      "project": "hangr"
-    },
-    {
       "when": "This week",
       "text": "Hangr walk-in pitches, Rockland County, NY",
       "project": "hangr"
-    },
-    {
-      "when": "Oct 15",
-      "date": "2026-10-15",
-      "text": "Possible Ep 1 release (Grace Bedell's letter anniversary). Idea, not decided.",
-      "project": "hhs"
     },
     {
       "when": "Fri 9:30 AM",
@@ -477,6 +465,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-16",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Update",
+      "text": "Lapels Cleaners demo was on Yehuda's calendar for last night 8:00 PM; the outcome has not been reported yet."
+    },
     {
       "date": "2026-10-15",
       "author": "instinct",

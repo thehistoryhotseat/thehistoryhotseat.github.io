@@ -457,9 +457,9 @@
       "project": "hangr"
     },
     {
-      "when": "Fri 9:30 AM",
-      "date": "2026-10-16",
-      "text": "Hangr demo: David Landau",
+      "when": "Mon, time TBD",
+      "date": "2026-10-19",
+      "text": "Hangr demo: David Landau (rescheduled; he wants a video preview first)",
       "project": "hangr"
     },
     {
@@ -470,6 +470,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-16",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Update",
+      "text": "David Landau demo moved from this morning to Monday (time TBD); he wants a video preview of onboarding first. Yehuda's calendar confirms the cancellation."
+    },
     {
       "date": "2026-10-16",
       "author": "instinct",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "updated_by": "Instinct",
   "owner": "Aryeh",
   "projects": [
@@ -320,12 +320,12 @@
       "color": "violet",
       "tagline": "AI agency for local trades",
       "status": {
-        "tone": "wait",
-        "label": "Needs you"
+        "tone": "ok",
+        "label": "Paused by Aryeh"
       },
-      "summary": "No outreach sent Oct 12: no new verified Rockland targets found. Two Oct 9 emails remain verified in Sent. Awaiting Aryeh on widening to Orange County and Bergen NJ or holding batches; reply monitoring continues.",
+      "summary": "Aryeh paused all outreach sends Oct 19: no emails or Apollo spend until he says resume. Work shifts to correcting dead prospect addresses. Two Oct 9 emails remain verified in Sent.",
       "details": "Rockland-area prospects; sent-mail checks prevent duplicate outreach. Replies and bounces monitored separately.",
-      "next": "Choose whether to widen to Orange County and Bergen NJ or hold batches",
+      "next": "Correct dead prospect emails; resume sends only when Aryeh lifts the pause",
       "stats": [
         {
           "value": "2",
@@ -344,12 +344,7 @@
           "label": "sent Oct 6"
         }
       ],
-      "waiting": [
-        {
-          "text": "Widen to Orange County and Bergen NJ, or hold outreach batches?",
-          "by": "Instinct"
-        }
-      ],
+      "waiting": [],
       "shipped": [
         {
           "text": "BMC Plumbing and Aloi Plumbing emailed; verified in Sent",
@@ -392,13 +387,14 @@
       ],
       "in_progress": [
         {
-          "text": "Reply monitoring; new targets remain Rockland-only pending scope decision",
+          "text": "Correcting dead prospect emails; reply monitoring continues; sends paused per Aryeh Oct 19",
+          "date": "2026-10-19",
           "by": "Instinct"
         }
       ],
       "up_next": [
         {
-          "text": "Resume batches when verified targets or an approved wider area are available",
+          "text": "Resume outreach batches when Aryeh lifts the pause",
           "by": "Instinct"
         }
       ],
@@ -470,6 +466,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-19",
+      "author": "instinct",
+      "project": "ai",
+      "kind": "Decision",
+      "text": "Aryeh paused 18 AI outreach sends; no emails or Apollo spend until he says resume. Work shifts to correcting dead prospect addresses."
+    },
     {
       "date": "2026-10-18",
       "author": "instinct",

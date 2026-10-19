@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "updated_by": "Instinct",
   "owner": "Aryeh",
   "projects": [
@@ -457,9 +457,9 @@
       "project": "hangr"
     },
     {
-      "when": "Mon 9:30-10:00 AM",
-      "date": "2026-10-19",
-      "text": "Hangr demo: David Landau (rescheduled; he wants a video preview first)",
+      "when": "Tue 9:30-10:00 AM",
+      "date": "2026-10-20",
+      "text": "Hangr demo: David Landau (moved again from Monday; he wants a video preview first)",
       "project": "hangr"
     },
     {
@@ -470,6 +470,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-18",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Update",
+      "text": "David Landau demo moved again, now Tuesday Oct 20, 9:30-10:00 AM (updated calendar invite)."
+    },
     {
       "date": "2026-10-16",
       "author": "instinct",

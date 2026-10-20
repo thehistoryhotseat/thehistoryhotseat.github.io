@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "updated_by": "Instinct",
   "owner": "Aryeh",
   "projects": [
@@ -12,12 +12,12 @@
       "color": "coral",
       "tagline": "Kids' history Shorts",
       "status": {
-        "tone": "ok",
-        "label": "Drafts delivered"
+        "tone": "wait",
+        "label": "Needs you"
       },
-      "summary": "Lincoln v1.3 and Washington v1.1 delivered to Aryeh. Lincoln panel review passed; final audio comparison is with Aryeh. Washington voice matched closer to Ep 1. Publishing not yet verified.",
+      "summary": "Lincoln Ep 1 v1.3 and Washington Ep 2 v1.1 are verified and staged for YouTube upload (today and tomorrow 3 PM ET). Publishing waits on Aryeh's Google sign-in tap. Da Vinci Ep 3 is in production on the free track: script v2 final, panel pass done, draft due this morning.",
       "details": "3D cartoon style · host Max Rewind · Ep 1: Abraham Lincoln, Feb 1861",
-      "next": "Finish final cut checks and prepare publishing plus Shorts",
+      "next": "Aryeh taps the Google device prompt; uploads go: Lincoln today 3 PM ET, Washington tomorrow 3 PM ET",
       "stats": [
         {
           "value": "3D",
@@ -28,7 +28,12 @@
           "label": "Lincoln"
         }
       ],
-      "waiting": [],
+      "waiting": [
+        {
+          "text": "Tap Yes on the Google sign-in prompt (Gmail app on your iPhone) so the YouTube uploads can start",
+          "by": "Instinct"
+        }
+      ],
       "shipped": [
         {
           "text": "Lincoln Ep 1 v1.3 delivered; panel cleared",
@@ -75,14 +80,14 @@
       ],
       "in_progress": [
         {
-          "text": "Final Lincoln audio check and publishing preparation",
-          "date": "2026-10-08",
+          "text": "Lincoln v1.3 and Washington v1.1 upload packages staged; browser parked at the Google sign-in",
+          "date": "2026-10-20",
           "by": "Instinct"
         },
         {
-          "text": "Schedule new episodes and Shorts after final checks",
-          "date": "2026-10-08",
-          "by": "Instinct"
+          "text": "Da Vinci Ep 3 in production with Tab (script v2 final, panel pass done; draft due ~8 AM ET)",
+          "date": "2026-10-20",
+          "by": "Tab"
         }
       ],
       "up_next": [
@@ -466,6 +471,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-20",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Needs Aryeh",
+      "text": "Lincoln and Washington uploads are staged and waiting on Aryeh's Google sign-in tap (planned today and tomorrow 3 PM ET). Da Vinci Ep 3 is in production, draft due this morning."
+    },
     {
       "date": "2026-10-19",
       "author": "instinct",

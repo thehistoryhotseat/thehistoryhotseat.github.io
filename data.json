@@ -17,7 +17,7 @@
       },
       "summary": "Lincoln Ep 1 is live on YouTube - the channel's first episode, verified public at 3 PM Oct 20, zero spend. Washington Ep 2 is scheduled for tomorrow 3 PM ET; Da Vinci Ep 3 (Thu) and Newton Ep 4 (Fri) follow on the free track.",
       "details": "3D cartoon style · host Max Rewind · Ep 1: Abraham Lincoln, Feb 1861",
-      "next": "Washington live tomorrow 3 PM ET; Da Vinci Thu 3 PM, Newton Fri 3 PM (planned)",
+      "next": "Washington live tomorrow 3 PM ET; Da Vinci Thu 3 PM, Newton Fri 3 PM (all scheduled)",
       "stats": [
         {
           "value": "3D",
@@ -471,13 +471,13 @@
     {
       "when": "Thu 3 PM",
       "date": "2026-10-22",
-      "text": "History Hot Seat: Da Vinci Ep 3 goes public (planned)",
+      "text": "History Hot Seat: Da Vinci Ep 3 goes public (scheduled)",
       "project": "hhs"
     },
     {
       "when": "Fri 3 PM",
       "date": "2026-10-23",
-      "text": "History Hot Seat: Newton Ep 4 goes public (planned)",
+      "text": "History Hot Seat: Newton Ep 4 goes public (scheduled)",
       "project": "hhs"
     },
     {

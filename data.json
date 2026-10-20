@@ -13,11 +13,11 @@
       "tagline": "Kids' history Shorts",
       "status": {
         "tone": "ok",
-        "label": "Going live today"
+        "label": "Ep 1 live"
       },
-      "summary": "Sign-in tap done: Lincoln Ep 1 goes public today 3 PM ET, Washington Ep 2 tomorrow 3 PM ET, both scheduled on YouTube. Da Vinci Ep 3 is in final fixes and queued next; Newton Ep 4 draft v1 is in QA fixes (v2 due this morning).",
+      "summary": "Lincoln Ep 1 is live on YouTube - the channel's first episode, verified public at 3 PM Oct 20, zero spend. Washington Ep 2 is scheduled for tomorrow 3 PM ET; Da Vinci Ep 3 (Thu) and Newton Ep 4 (Fri) follow on the free track.",
       "details": "3D cartoon style · host Max Rewind · Ep 1: Abraham Lincoln, Feb 1861",
-      "next": "Lincoln live today 3 PM ET; Washington tomorrow 3 PM ET; Da Vinci queued after that",
+      "next": "Washington live tomorrow 3 PM ET; Da Vinci Thu 3 PM, Newton Fri 3 PM (planned)",
       "stats": [
         {
           "value": "3D",
@@ -30,6 +30,11 @@
       ],
       "waiting": [],
       "shipped": [
+        {
+          "text": "Lincoln Ep 1 live on YouTube - first episode, verified public (youtube.com/shorts/wvwOLscZ8Ns)",
+          "date": "2026-10-20",
+          "by": "Instinct"
+        },
         {
           "text": "Lincoln Ep 1 v1.3 delivered; panel cleared",
           "date": "2026-10-08",
@@ -458,15 +463,21 @@
       "project": "hangr"
     },
     {
-      "when": "Today 3 PM",
-      "date": "2026-10-20",
-      "text": "History Hot Seat: Lincoln Ep 1 goes public on YouTube",
-      "project": "hhs"
-    },
-    {
       "when": "Tomorrow 3 PM",
       "date": "2026-10-21",
       "text": "History Hot Seat: Washington Ep 2 goes public on YouTube",
+      "project": "hhs"
+    },
+    {
+      "when": "Thu 3 PM",
+      "date": "2026-10-22",
+      "text": "History Hot Seat: Da Vinci Ep 3 goes public (planned)",
+      "project": "hhs"
+    },
+    {
+      "when": "Fri 3 PM",
+      "date": "2026-10-23",
+      "text": "History Hot Seat: Newton Ep 4 goes public (planned)",
       "project": "hhs"
     },
     {
@@ -477,6 +488,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-20",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Shipped",
+      "text": "Lincoln Ep 1 is live on YouTube - the channel's first episode, verified public at 3:25 PM. Zero spend. Washington tomorrow 3 PM ET."
+    },
     {
       "date": "2026-10-20",
       "author": "instinct",

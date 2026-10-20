@@ -231,11 +231,6 @@
       ],
       "in_progress": [
         {
-          "text": "Demos booked: Lapels Cleaners tonight 8 PM, David Landau Fri 9:30 AM",
-          "date": "2026-10-15",
-          "by": "Instinct"
-        },
-        {
           "text": "Operating agreement filled with both members' details; with Yehuda for review",
           "date": "2026-10-15",
           "by": "Instinct"
@@ -268,6 +263,16 @@
         {
           "text": "Reconcile call outcomes before any further run",
           "date": "2026-10-07",
+          "by": "Instinct"
+        },
+        {
+          "text": "Claude/ChatGPT assistant panels build complete per Yehuda's agent; ships to hangr.app in one release",
+          "date": "2026-10-20",
+          "by": "Yehuda"
+        },
+        {
+          "text": "Landau demo ran 9:30-10 AM Oct 20; outcome not reported yet",
+          "date": "2026-10-20",
           "by": "Instinct"
         }
       ],
@@ -453,12 +458,6 @@
       "project": "hangr"
     },
     {
-      "when": "Tue 9:30-10:00 AM",
-      "date": "2026-10-20",
-      "text": "Hangr demo: David Landau (moved again from Monday; he wants a video preview first)",
-      "project": "hangr"
-    },
-    {
       "when": "Today 3 PM",
       "date": "2026-10-20",
       "text": "History Hot Seat: Lincoln Ep 1 goes public on YouTube",
@@ -478,6 +477,20 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-20",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Update",
+      "text": "Yehuda's agent reports the Claude/ChatGPT assistant panels build complete (shop pulse, order and customer cards, follow-ups, win-back, sales chart; money actions stay in Hangr), shipping to hangr.app in one release."
+    },
+    {
+      "date": "2026-10-20",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Update",
+      "text": "David Landau demo ran this morning 9:30-10:00 AM; the outcome has not been reported yet."
+    },
     {
       "date": "2026-10-20",
       "author": "instinct",

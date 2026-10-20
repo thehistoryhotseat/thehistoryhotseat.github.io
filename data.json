@@ -12,12 +12,12 @@
       "color": "coral",
       "tagline": "Kids' history Shorts",
       "status": {
-        "tone": "wait",
-        "label": "Needs you"
+        "tone": "ok",
+        "label": "Going live today"
       },
-      "summary": "Lincoln Ep 1 v1.3 and Washington Ep 2 v1.1 are verified and staged for YouTube upload (today and tomorrow 3 PM ET). Publishing waits on Aryeh's Google sign-in tap. Da Vinci Ep 3 is in production on the free track: script v2 final, panel pass done, draft due this morning.",
+      "summary": "Sign-in tap done: Lincoln Ep 1 goes public today 3 PM ET, Washington Ep 2 tomorrow 3 PM ET, both scheduled on YouTube. Da Vinci Ep 3 is in final fixes and queued next; Newton Ep 4 draft v1 is in QA fixes (v2 due this morning).",
       "details": "3D cartoon style · host Max Rewind · Ep 1: Abraham Lincoln, Feb 1861",
-      "next": "Aryeh taps the Google device prompt; uploads go: Lincoln today 3 PM ET, Washington tomorrow 3 PM ET",
+      "next": "Lincoln live today 3 PM ET; Washington tomorrow 3 PM ET; Da Vinci queued after that",
       "stats": [
         {
           "value": "3D",
@@ -28,12 +28,7 @@
           "label": "Lincoln"
         }
       ],
-      "waiting": [
-        {
-          "text": "Tap Yes on the Google sign-in prompt (Gmail app on your iPhone) so the YouTube uploads can start",
-          "by": "Instinct"
-        }
-      ],
+      "waiting": [],
       "shipped": [
         {
           "text": "Lincoln Ep 1 v1.3 delivered; panel cleared",
@@ -80,12 +75,12 @@
       ],
       "in_progress": [
         {
-          "text": "Lincoln v1.3 and Washington v1.1 upload packages staged; browser parked at the Google sign-in",
+          "text": "Da Vinci Ep 3 in final fixes; queued next for upload",
           "date": "2026-10-20",
           "by": "Instinct"
         },
         {
-          "text": "Da Vinci Ep 3 in production with Tab (script v2 final, panel pass done; draft due ~8 AM ET)",
+          "text": "Newton Ep 4 v2 in production with Tab (fix list sent; ETA ~8:45 AM ET)",
           "date": "2026-10-20",
           "by": "Tab"
         }
@@ -464,6 +459,18 @@
       "project": "hangr"
     },
     {
+      "when": "Today 3 PM",
+      "date": "2026-10-20",
+      "text": "History Hot Seat: Lincoln Ep 1 goes public on YouTube",
+      "project": "hhs"
+    },
+    {
+      "when": "Tomorrow 3 PM",
+      "date": "2026-10-21",
+      "text": "History Hot Seat: Washington Ep 2 goes public on YouTube",
+      "project": "hhs"
+    },
+    {
       "when": "Oct 30",
       "date": "2026-10-30",
       "text": "HeyGen access ends (from the previous site)",
@@ -471,6 +478,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-20",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Update",
+      "text": "Sign-in tap done: Lincoln goes public today 3 PM ET, Washington tomorrow 3 PM ET. Da Vinci Ep 3 in final fixes; Newton Ep 4 draft in QA fixes."
+    },
     {
       "date": "2026-10-20",
       "author": "instinct",

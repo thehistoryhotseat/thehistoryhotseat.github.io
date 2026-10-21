@@ -271,7 +271,7 @@
           "by": "Instinct"
         },
         {
-          "text": "Claude/ChatGPT assistant panels build complete per Yehuda's agent; ships to hangr.app in one release",
+          "text": "Claude/ChatGPT assistant panels build complete per Yehuda's agent; ships with release rel-8 (assistant wording fix included)",
           "date": "2026-10-20",
           "by": "Yehuda"
         },
@@ -488,6 +488,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-20",
+      "author": "instinct",
+      "project": "hangr",
+      "kind": "Update",
+      "text": "Yehuda's agent reports a follow-up: the assistant's tool wording now says what each panel does and that money stays in Hangr; ships with release rel-8."
+    },
     {
       "date": "2026-10-20",
       "author": "instinct",

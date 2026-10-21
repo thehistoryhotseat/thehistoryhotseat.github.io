@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "updated_by": "Instinct",
   "owner": "Aryeh",
   "projects": [
@@ -15,9 +15,9 @@
         "tone": "ok",
         "label": "Ep 1 live"
       },
-      "summary": "Lincoln Ep 1 is live on YouTube - the channel's first episode, verified public at 3 PM Oct 20, zero spend. Washington Ep 2 is scheduled for tomorrow 3 PM ET; Da Vinci Ep 3 (Thu) and Newton Ep 4 (Fri) follow on the free track.",
+      "summary": "Lincoln Ep 1 is live on YouTube - the channel's first episode, verified public at 3 PM Oct 20, zero spend. Washington Ep 2 is scheduled for today 3 PM ET; Da Vinci Ep 3 (Thu) and Newton Ep 4 (Fri) follow on the free track.",
       "details": "3D cartoon style · host Max Rewind · Ep 1: Abraham Lincoln, Feb 1861",
-      "next": "Washington live tomorrow 3 PM ET; Da Vinci Thu 3 PM, Newton Fri 3 PM (all scheduled)",
+      "next": "Washington live today 3 PM ET; Da Vinci Thu 3 PM, Newton Fri 3 PM (all scheduled)",
       "stats": [
         {
           "value": "3D",
@@ -463,7 +463,7 @@
       "project": "hangr"
     },
     {
-      "when": "Tomorrow 3 PM",
+      "when": "Today 3 PM",
       "date": "2026-10-21",
       "text": "History Hot Seat: Washington Ep 2 goes public on YouTube",
       "project": "hhs"

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "updated_by": "Instinct",
   "owner": "Aryeh",
   "projects": [
@@ -15,9 +15,9 @@
         "tone": "ok",
         "label": "Ep 2 live"
       },
-      "summary": "Lincoln Ep 1 and Washington Ep 2 are live on YouTube, both verified public (Oct 20 and Oct 21), zero spend. Da Vinci Ep 3 (Thu) and Newton Ep 4 (Fri) follow on the free track.",
+      "summary": "Lincoln Ep 1 and Washington Ep 2 are live on YouTube, both verified public (Oct 20 and Oct 21), zero spend. Da Vinci Ep 3 (today) and Newton Ep 4 (Fri) follow on the free track.",
       "details": "3D cartoon style · host Max Rewind · Ep 1: Abraham Lincoln, Feb 1861",
-      "next": "Da Vinci live tomorrow 3 PM ET (scheduled); Newton Fri 3 PM (scheduled)",
+      "next": "Da Vinci Ep 3 scheduled today 3 PM ET; Newton Fri 3 PM (scheduled)",
       "stats": [
         {
           "value": "3D",
@@ -468,7 +468,7 @@
       "project": "hangr"
     },
     {
-      "when": "Thu 3 PM",
+      "when": "Today 3 PM",
       "date": "2026-10-22",
       "text": "History Hot Seat: Da Vinci Ep 3 goes public (scheduled)",
       "project": "hhs"

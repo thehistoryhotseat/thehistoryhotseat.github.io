@@ -17,7 +17,7 @@
       },
       "summary": "Launch week complete: all four episodes (Lincoln, Washington, Da Vinci, Newton) are live on YouTube, all verified public Oct 20-23, zero spend.",
       "details": "3D cartoon style · host Max Rewind · Ep 1: Abraham Lincoln, Feb 1861",
-      "next": "Shorts and cutdowns, 4-5 a week (launch week done)",
+      "next": "Ep 5 Franklin Mon 3 PM ET; shorts/cutdowns 4-5 a week",
       "stats": [
         {
           "value": "3D",
@@ -93,7 +93,13 @@
           "note": "earlier pilot"
         }
       ],
-      "in_progress": [],
+      "in_progress": [
+        {
+          "text": "Franklin Ep 5 script in production with Tab (kite/lightning debate, safety framing); cut due Sunday evening",
+          "date": "2026-10-23",
+          "by": "Tab"
+        }
+      ],
       "up_next": [
         {
           "text": "Shorts and cutdowns, 4-5 a week after Ep 1"
@@ -467,6 +473,12 @@
       "project": "hangr"
     },
     {
+      "when": "Mon 3 PM",
+      "date": "2026-10-26",
+      "text": "History Hot Seat: Franklin Ep 5 goes public (planned)",
+      "project": "hhs"
+    },
+    {
       "when": "Oct 30",
       "date": "2026-10-30",
       "text": "HeyGen access ends (from the previous site)",
@@ -474,6 +486,20 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-23",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Update",
+      "text": "Next week set: Franklin Ep 5 Monday 3 PM ET (script in production with Tab, cut due Sunday), Edison Ep 6 Tuesday, three more topics to follow. Same verify-then-publish flow, zero spend."
+    },
+    {
+      "date": "2026-10-23",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Update",
+      "text": "All four launch episodes are at 0 views so far; the channel's 1 subscriber and old-video views don't reach them. No restrictions or upload issues found - the Shorts feed typically takes days of steady posting before it samples a new channel."
+    },
     {
       "date": "2026-10-23",
       "author": "instinct",

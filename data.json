@@ -13,11 +13,11 @@
       "tagline": "Kids' history Shorts",
       "status": {
         "tone": "ok",
-        "label": "Ep 3 live"
+        "label": "4 eps live"
       },
-      "summary": "Lincoln Ep 1, Washington Ep 2 and Da Vinci Ep 3 are live on YouTube, all verified public (Oct 20-22), zero spend. Newton Ep 4 (today) follows on the free track.",
+      "summary": "Launch week complete: all four episodes (Lincoln, Washington, Da Vinci, Newton) are live on YouTube, all verified public Oct 20-23, zero spend.",
       "details": "3D cartoon style · host Max Rewind · Ep 1: Abraham Lincoln, Feb 1861",
-      "next": "Newton Ep 4 scheduled today 3 PM ET",
+      "next": "Shorts and cutdowns, 4-5 a week (launch week done)",
       "stats": [
         {
           "value": "3D",
@@ -30,6 +30,11 @@
       ],
       "waiting": [],
       "shipped": [
+        {
+          "text": "Newton Ep 4 live on YouTube - verified public (youtube.com/shorts/kI_l37zGITk)",
+          "date": "2026-10-23",
+          "by": "Instinct"
+        },
         {
           "text": "Da Vinci Ep 3 live on YouTube - verified public (youtube.com/shorts/wzk0-vIjbp4)",
           "date": "2026-10-22",
@@ -88,13 +93,7 @@
           "note": "earlier pilot"
         }
       ],
-      "in_progress": [
-        {
-          "text": "Newton Ep 4 v2 in production with Tab (fix list sent; ETA ~8:45 AM ET)",
-          "date": "2026-10-20",
-          "by": "Tab"
-        }
-      ],
+      "in_progress": [],
       "up_next": [
         {
           "text": "Shorts and cutdowns, 4-5 a week after Ep 1"
@@ -468,12 +467,6 @@
       "project": "hangr"
     },
     {
-      "when": "Today 3 PM",
-      "date": "2026-10-23",
-      "text": "History Hot Seat: Newton Ep 4 goes public (scheduled)",
-      "project": "hhs"
-    },
-    {
       "when": "Oct 30",
       "date": "2026-10-30",
       "text": "HeyGen access ends (from the previous site)",
@@ -481,6 +474,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-23",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Shipped",
+      "text": "Newton Ep 4 is live on YouTube - verified public at 3:27 PM, link checked (youtube.com/shorts/kI_l37zGITk). Launch week complete: all four episodes public, zero spend."
+    },
     {
       "date": "2026-10-22",
       "author": "instinct",

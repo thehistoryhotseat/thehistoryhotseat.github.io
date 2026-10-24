@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "updated_by": "Instinct",
   "owner": "Aryeh",
   "projects": [
@@ -17,7 +17,7 @@
       },
       "summary": "Launch week complete: all four episodes (Lincoln, Washington, Da Vinci, Newton) are live on YouTube, all verified public Oct 20-23, zero spend.",
       "details": "3D cartoon style · host Max Rewind · Ep 1: Abraham Lincoln, Feb 1861",
-      "next": "Ep 5 Franklin Mon 3 PM ET; shorts/cutdowns 4-5 a week",
+      "next": "Ep 5 Franklin Mon 3 PM ET; Eps 5-9 cuts banked",
       "stats": [
         {
           "value": "3D",
@@ -95,9 +95,9 @@
       ],
       "in_progress": [
         {
-          "text": "Franklin Ep 5 script in production with Tab (kite/lightning debate, safety framing); cut due Sunday evening",
-          "date": "2026-10-23",
-          "by": "Tab"
+          "text": "Eps 5-9 (Franklin, Edison, Wright, Carver, Galileo) cut and QA-accepted; publication clearance pending, uploads start Monday 3 PM ET",
+          "date": "2026-10-24",
+          "by": "Instinct"
         }
       ],
       "up_next": [
@@ -486,6 +486,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-24",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Update",
+      "text": "Week-2 production complete: all five episodes (Franklin, Edison, Wright, Carver, Galileo) cut, QA-accepted and banked, zero spend. Publication clearance is still pending - the full panel review is not yet complete. Franklin Ep 5 is on track for Monday 3 PM ET."
+    },
     {
       "date": "2026-10-23",
       "author": "instinct",

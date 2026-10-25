@@ -95,7 +95,7 @@
       ],
       "in_progress": [
         {
-          "text": "Eps 5-9 (Franklin, Edison, Wright, Carver, Galileo) cut and QA-accepted; Monday 3 PM ET publication target, pending clearance",
+          "text": "Eps 5-9 (Franklin, Edison, Wright, Carver, Galileo) cut and QA-accepted; Aryeh approved publication for these five; scheduling for the Monday 3 PM ET start is being confirmed",
           "date": "2026-10-24",
           "by": "Instinct"
         }
@@ -486,6 +486,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-24",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Update",
+      "text": "Aryeh approved publication of the five week-2 episodes this time, after the completed ChatGPT/Grok review and video QA were disclosed. Scheduling for the Monday 3 PM ET start is being confirmed."
+    },
     {
       "date": "2026-10-24",
       "author": "instinct",

@@ -17,7 +17,7 @@
       },
       "summary": "Launch week complete: all four episodes (Lincoln, Washington, Da Vinci, Newton) are live on YouTube, all verified public Oct 20-23, zero spend.",
       "details": "3D cartoon style · host Max Rewind · Ep 1: Abraham Lincoln, Feb 1861",
-      "next": "Ep 5 Franklin Mon 3 PM ET; Eps 5-9 cuts banked",
+      "next": "Publish Eps 5-9 once file delivery is sorted; cuts banked and approved",
       "stats": [
         {
           "value": "3D",
@@ -95,7 +95,7 @@
       ],
       "in_progress": [
         {
-          "text": "Eps 5-9 (Franklin, Edison, Wright, Carver, Galileo) cut and QA-accepted; Aryeh approved publication for these five; scheduling for the Monday 3 PM ET start is being confirmed",
+          "text": "Eps 5-9 cut, QA-accepted and approved by Aryeh, but publication is parked - the finished files are not reaching the publishing desk and the delivery issue is being worked. Monday 3 PM ET is no longer promised.",
           "date": "2026-10-24",
           "by": "Instinct"
         }
@@ -473,12 +473,6 @@
       "project": "hangr"
     },
     {
-      "when": "Mon 3 PM",
-      "date": "2026-10-26",
-      "text": "History Hot Seat: Franklin Ep 5 goes public (planned)",
-      "project": "hhs"
-    },
-    {
       "when": "Oct 30",
       "date": "2026-10-30",
       "text": "HeyGen access ends (from the previous site)",
@@ -486,6 +480,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-24",
+      "author": "instinct",
+      "project": "hhs",
+      "kind": "Update",
+      "text": "Publication of the five approved episodes is parked: the finished files are not reaching the publishing desk, and the delivery issue is being worked. Monday 3 PM ET is no longer promised; dates reset once delivery is sorted."
+    },
     {
       "date": "2026-10-24",
       "author": "instinct",
@@ -886,4 +887,4 @@
       "text": "Sent five new prospect emails; standing weekday outreach remains active."
     }
   ]
-}
+    }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "updated_by": "Instinct",
   "owner": "Aryeh",
   "projects": [
@@ -441,14 +441,13 @@
       "icon": "Tr",
       "color": "green",
       "tagline": "Trading desk",
-      "sample": true,
       "status": {
         "tone": "idle",
-        "label": "SAMPLE"
+        "label": "Closed"
       },
-      "summary": "SAMPLE: no real trading data has been added yet. This tab only shows the layout.",
-      "details": "No real desk data connected. Nothing here is a position, signal or recommendation.",
-      "next": "Connect real desk data",
+      "summary": "Closed by Aryeh Oct 9. Trade execution and research are canceled; only the separate AI briefing continues.",
+      "details": "Nothing here is a position, signal or recommendation.",
+      "next": "None - desk closed",
       "stats": [],
       "waiting": [],
       "shipped": [],
@@ -480,6 +479,13 @@
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-31",
+      "author": "instinct",
+      "project": "trade",
+      "kind": "Update",
+      "text": "Trading card corrected: the desk was closed by Aryeh on Oct 9 - execution and research are canceled, and only the separate AI briefing continues. The old SAMPLE placeholder is retired."
+    },
     {
       "date": "2026-10-27",
       "author": "instinct",
